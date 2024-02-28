@@ -1,0 +1,37 @@
+body{
+  margin: 0px;
+  padding: 0px;
+     --font-family: "Inter", sans-serif; 
+    --font-family-extra: "DM Sans", sans-serif;
+    --font-family-oswald: "Oswald", sans-serif;
+    --font-family-kaushan: "Kaushan Script", cursive;
+    font-family:"DM Sans", sans-serif;
+    letter-spacing: 1px;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.outer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+     background: #080a24;
+    width: 80%;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 20px;
+  margin-top: 20px;
+
+}
+.links ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 47px;
+  
+
+
+}
