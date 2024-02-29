@@ -17,7 +17,9 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-     background: #080a24;
+     /* background: #080a24; */
+  /* color: #203e03; */
+     background-color:#152704;
     width: 80%;
     color: aliceblue;
     border-radius: 5px;
@@ -34,4 +36,36 @@ body{
   
 
 
+}
+
+/* home section */
+.home{
+  display: flex;
+    justify-content: center;
+    gap: 10em;
+    padding: 50px;
+    margin: 50px;
+
+}
+.home .left{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;}
+
+.home img{
+  width: 270px;
+  border-radius: 10px 68px
+}
+.home h3{
+  letter-spacing: 2px;
+  color: #00000099;
+  font-weight: 500;
+    font-family: system-ui;
+}
+.home h1{
+  color: #203e03;
+  font-size: 65px;
+
+  font-family: system-ui;
 }
