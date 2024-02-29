@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../assets/img/logo.png'
 
 export default function Navbar() {
   return <>
@@ -6,6 +7,7 @@ export default function Navbar() {
 
     <div className="outer">
         <div className="logo">
+            <img src={logo} alt="" />
             Chaitanya Lonarkar
         </div>
         <div className="links">

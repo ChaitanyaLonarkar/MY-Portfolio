@@ -27,6 +27,11 @@ body{
   margin-top: 20px;
 
 }
+.outer img{
+  width: 34px;
+  filter: invert(1);
+
+}
 .links ul{
   display: flex;
   justify-content: center;
