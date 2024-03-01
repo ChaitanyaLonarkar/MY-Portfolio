@@ -1,6 +1,7 @@
 import React from 'react'
-import myimg from '../assets/img/imgC.jpg'
+import myimg from '../assets/img/imgCcc.jpg'
 import myimg2 from '../assets/img/bimg.jpg'
+
 
 export default function Home() {
   return (

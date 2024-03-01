@@ -70,8 +70,9 @@ body{
     gap: 20px;}
 
 .home img{
-  width: 270px;
-  border-radius: 10px 68px
+  width: 307px;
+    border-radius: 11px 62px;
+    filter: brightness(1.15);
 }
 .home h3{
   letter-spacing: 2px;
@@ -115,7 +116,10 @@ body{
   width: 20px;
   height: 20px;
   /* background: rgba(255, 255, 255, 0.2); */
-  background: rgb(29 45 9 / 36%);
+  /* background: rgb(29 45 9 / 36%);
+   */
+   background: rgb(136 216 36 / 36%);
+
   animation: animate 25s linear infinite;
   bottom: -150px;
   
