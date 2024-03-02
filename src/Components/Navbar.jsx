@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="nav">
         <div className="outer">
           <div className="logo">
-            <img src={logo} alt="" />
+            {/* <img src={logo} alt="" /> */}
             Chaitanya Lonarkar
           </div>
           <div className="links">
