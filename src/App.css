@@ -221,3 +221,57 @@ body{
   }
 
 }
+
+
+/* .f::before{
+  content: ' ';
+  position: absolute;
+  padding-left: 30px;
+  color: #fff;
+  width: 526px;
+  margin-left: 20px;
+  background: #0e3a06;
+  animation: textrotate 5s linear infinite;
+  -webkit-animation: textrotate 5s linear infinite;
+}
+@keyframes textrotate{
+  0%{
+    content: 'Developer';
+  }
+  50%{
+    content: 'Designer';
+  }
+  100%{
+    content: 'Animator';
+  }
+} */
+
+.home .f{
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: animation1 5s  infinite ease-in; */
+  /* animation-delay: 1s; */
+
+}
+
+/* @keyframes animation1 {
+  0%{
+     opacity: 0; */
+     /* display: none; */
+  /* }
+  
+} */
+
+/* .home .b{ */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: animation2 5s  infinite ease-in; */
+  /* animation-delay: 4s; */
+
+/* } */
+
+/* @keyframes animation2{
+  0%{
+     opacity: 0;
+     /* display: none; */
+  /*}
+  
+} */

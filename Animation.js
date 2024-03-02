@@ -41,3 +41,11 @@ kgRef.addEventListener('input',fromkg);
 gmRef.addEventListener('input',fromgm);
 ouRef.addEventListener('input',fromou);
 stRef.addEventListener('input',fromst);
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.querySelector(".container");
+  container.classList.add("animate");
+});
