@@ -101,7 +101,8 @@ body {
 }
 .kbtn{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 20px;
 }
 .slinks{
   display: flex;
