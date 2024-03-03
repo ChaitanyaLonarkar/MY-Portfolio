@@ -73,6 +73,8 @@ body {
   letter-spacing: 2px;
   color: #00000099;
   font-weight: 500;
+  font-size: 20px;
+
   font-family: system-ui;
 }
 .home h1 {
@@ -219,11 +221,10 @@ body {
   color: #0e3a06;
   /* width: 526px; */
   width: 609px;
-  left:-110px;
+  left: -110px;
 
-
-  background: #0e3a06;
-  animation: textrotate 3s linear infinite ;
+  background: #d4ffa7;
+  animation: textrotate 3s linear infinite;
   /* -webkit-animation: textrotate 3s linear infinite; */
 }
 @keyframes textrotate {
@@ -240,9 +241,8 @@ body {
     /* width: 200px; */
     width: 609px;
   }
-  50%{
-    left:-110px;
-
+  50% {
+    left: -110px;
   }
   100% {
     /* content: 'Animator'; */
