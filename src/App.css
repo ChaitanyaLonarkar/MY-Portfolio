@@ -81,8 +81,9 @@ body {
   /* color: #203e03; */
   color: #0e1804;
   font-size: 65px;
-
+  /* font-family: canopee; */
   font-family: system-ui;
+      font-variant-caps: petite-caps;
 }
 .home .kbtn button{
   cursor: pointer;
