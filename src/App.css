@@ -78,10 +78,47 @@ body {
   font-family: system-ui;
 }
 .home h1 {
-  color: #203e03;
+  /* color: #203e03; */
+  color: #0e1804;
   font-size: 65px;
 
   font-family: system-ui;
+}
+.home .kbtn button{
+  cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    color:  #091a05;
+    background:#dbffb7  ;
+    transition: all 0.5s;
+}
+.home .kbtn button:hover{
+
+  color: #dbffb7;
+    background: #091a05;
+}
+.kbtn{
+  display: flex;
+  justify-content: space-between;
+}
+.slinks{
+  display: flex;
+    align-items: center;
+    font-size: xx-large;
+    gap: 10px;
+}
+.slinks a{
+  color:#172c08 ;
+  padding-top: 5px;
+  transition: all 0.5s;
+}
+.slinks a:hover{
+  color:#94c274 ;
+  scale: 1.1;
+  /* padding-top: 5px;/ */
+
 }
 
 /* animation =========================== */
@@ -209,6 +246,7 @@ body {
 .f {
   /* width: 500px; */
   overflow: hidden;
+  height: 123px;
   /* border: 2px solid red; */
 }
 
