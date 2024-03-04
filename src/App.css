@@ -56,6 +56,7 @@ body {
   gap: 10em;
   padding: 50px;
   margin: 50px;
+  /* height: 80vh; */
 }
 .home .left {
   display: flex;
@@ -322,3 +323,21 @@ body {
 /*}
   
 } */
+
+/* projets */
+.projets{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prights{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.project{
+  width: 700px;
+  height: 350px;
+  background-color: red;
+}

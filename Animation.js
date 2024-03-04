@@ -49,3 +49,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const container = document.querySelector(".container");
   container.classList.add("animate");
 });
+
+
+// horizontal sroll
+const scrollContainer = document.querySelector("main");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+});
