@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // horizontal sroll
-const scrollContainer = document.querySelector("main");
+const scrollContainer = document.getElementById("projects");
 
 scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();

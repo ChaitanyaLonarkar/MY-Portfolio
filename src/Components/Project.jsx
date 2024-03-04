@@ -4,8 +4,7 @@ export default function Project() {
   return (
     <>
     <section>
-
-      <div className="projects">
+      <div id="projects" className="projects">
         <div className="pleft">
             <h2>Selected Works</h2>
             <p>
@@ -19,6 +18,9 @@ export default function Project() {
              <div className="project">Animated wesites</div>
              <div className="project">Animated wesites</div>
              <div className="project">Animated wesites</div>
+             <div className="project">Animated wesites</div>
+             <div className="project">Animated wesites</div>
+
         </div>
       </div>
     </section>

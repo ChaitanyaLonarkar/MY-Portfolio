@@ -12,9 +12,12 @@ function App() {
 
   return (
     <>
-    <Animation/>
+    {/* <Animation/>
+    <div className="sectionHome">
+
       <Navbar/>
       <Home/>
+    </div> */}
       <Project/>
     </>
   )

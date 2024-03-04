@@ -50,6 +50,9 @@ body {
 }
 
 /* home section */
+.sectionHome{
+  height: 100vh;
+}
 .home {
   display: flex;
   justify-content: center;
@@ -325,16 +328,20 @@ body {
 } */
 
 /* projets */
-.projets{
+.projects{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 20px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* overflow-x: hidden; */
 }
 .prights{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  /* width: 700px; */
+
 }
 .project{
   width: 700px;
