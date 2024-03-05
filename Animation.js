@@ -58,8 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 //     evt.preventDefault();
 //     scrollContainer.scrollLeft += evt.deltaY;
 // });
-const element = document.querySelector(".projects");
-console.log(element)
+const e =document.getElementsByClassName("project")
+e.innerHTML="pink"
+const element = document.getElementById("projects");
+console.log(e)
 // console.log(scrollContainer)
 
 element.addEventListener('wheel', (event) => {

@@ -26,7 +26,7 @@ export default function Project() {
                 I have a play a key role in developing impactful projects. Here are curated selection showcasing my expertise and achieved results.
             </p>
         </div>
-        <div className="prights" onWheel={wheel}>
+        <div className="prights" >
              <div className="project">netflix clone</div>  
              <div className="project">Animated wesites</div>
              <div className="project">Animated wesites</div>
