@@ -52,9 +52,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // horizontal sroll
-const scrollContainer = document.getElementById("projects");
+// const scrollContainer = document.getElementById("projects");
 
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
+// scrollContainer.addEventListener("wheel", (evt) => {
+//     evt.preventDefault();
+//     scrollContainer.scrollLeft += evt.deltaY;
+// });
+const element = document.querySelector(".projects");
+console.log(element)
+// console.log(scrollContainer)
+
+element.addEventListener('wheel', (event) => {
+  event.preventDefault();
+
+  element.scrollBy({
+    left: event.deltaY < 0 ? -30 : 30,
+    
+  });
 });
