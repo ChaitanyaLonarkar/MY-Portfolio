@@ -13,8 +13,8 @@ function App() {
   
   return (
     <>
-      <Animation />
       <div className="sectionHome">
+      <Animation />
         <Navbar />
         <Home />
       </div>
