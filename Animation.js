@@ -52,23 +52,23 @@
 
 
 // horizontal sroll
-// const scrollContainer = document.getElementById("projects");
 
-// scrollContainer.addEventListener("wheel", (evt) => {
-//     evt.preventDefault();
-//     scrollContainer.scrollLeft += evt.deltaY;
-// });
-const e =document.getElementsByClassName("project")
-e.innerHTML="pink"
-const element = document.getElementById("projects");
-console.log(e)
-// console.log(scrollContainer)
-
-element.addEventListener('wheel', (event) => {
-  event.preventDefault();
-
-  element.scrollBy({
-    left: event.deltaY < 0 ? -30 : 30,
-    
-  });
+const scrollContainer = document.getElementById("projects");
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
 });
+// const e =document.getElementsByClassName("project")
+// const element = document.getElementById("project");
+// element.innerHTML="pink"
+// console.log(e)
+// // console.log(scrollContainer)
+
+// element.addEventListener('wheel', (event) => {
+//   event.preventDefault();
+
+//   element.scrollBy({
+//     left: event.deltaY < 0 ? -30 : 30,
+    
+//   });
+// });
