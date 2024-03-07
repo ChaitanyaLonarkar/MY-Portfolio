@@ -12,8 +12,9 @@ function App() {
   // const [count, setCount] = useState(0)
   const parallax = useParallax({
     // rotate: [0, 360],
-    scale: [ 1.3,0, "easeInQuad"],
-    // translateY: [ 0,50 ],
+    scale: [ 1,0.7, "easeInQuad"],
+    display: ["flex","none"]
+    // translateY: [ 0,20 ],
     // display: "none"
 
   });

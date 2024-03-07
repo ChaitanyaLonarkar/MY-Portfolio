@@ -20,7 +20,7 @@ console.log(element)
 
   return (
     <>
-      <section>
+      <section className="sectionProjects">
         <div id="projects" className="projects">
           {/* <div className="pleft">
             <h2>Selected Works</h2>

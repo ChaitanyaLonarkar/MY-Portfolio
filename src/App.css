@@ -349,6 +349,13 @@ body {
   background-color: red;
 }
 
-/* .sectionHome{
+/* after paralox sb set krne ke liye css */
+.sectionHome{
   position: fixed;
-} */
+  left: 60px;
+}
+
+.sectionProjects{
+  position: relative;
+  top: 100vh;
+}
