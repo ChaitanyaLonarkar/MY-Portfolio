@@ -4,10 +4,13 @@ import myimg2 from "../assets/img/bimg.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaSquareTwitter } from "react-icons/fa6";
+
 export default function Home() {
+  
+
   return (
     <>
-      <section className="home">
+      <section className="home" >
         <div className="left">
           <h3>CHAITANYA LONARKAR</h3>
           <h1>Frontend Devloper</h1>

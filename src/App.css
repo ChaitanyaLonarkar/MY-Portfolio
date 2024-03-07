@@ -336,7 +336,7 @@ body {
   /* overflow-x: hidden; */
 }
 .prights{
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   gap: 10px;
