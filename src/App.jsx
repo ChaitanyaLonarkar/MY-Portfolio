@@ -9,22 +9,22 @@ import Project from "./Components/Project";
 import { useParallax } from "react-scroll-parallax";
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // const parallax = useParallax({
-  //   // rotate: [0, 360],
-  //   scale: [ 1,0.7, "easeInQuad"],
-  //   display: ["flex","none"]
-  //   // translateY: [ 0,20 ],
-  //   // display: "none"
+  const [count, setCount] = useState(0)
+  const parallax = useParallax({
+    // rotate: [0, 360],
+    scale: [ 1.1,0.7, "easeInQuad"],
+    display: ["flex","none"]
+    // translateY: [ 0,20 ],
+    // display: "none"
 
-  // });
+  });
   return (
     <>
-        {/* <div className="sectionHome" ref={parallax.ref}> */}
-
-        <div className="sectionHome" >
-          <Animation />
           <Navbar />
+        <div className="sectionHome" ref={parallax.ref}>
+
+        {/* <div className="sectionHome" > */}
+          <Animation />
           <Home />
         </div>
       {/* <marquee onmouseover="this.stop();" onmouseout="this.start();">jhdhfjasdfhasdjkfhjkashdjfhjashdjfhjsahdhfjkshdjkfhjsahdjfhjasdf</marquee> */}

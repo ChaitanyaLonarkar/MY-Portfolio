@@ -58,9 +58,9 @@ body {
 .home {
   display: flex;
   justify-content: center;
-  gap: 10em;
+  gap: 5em;
   padding: 50px;
-  margin: 50px;
+  margin: 80px 50px;
   /* height: 80vh; */
 }
 .home .left {
@@ -68,6 +68,7 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  font-size: xxx-large;
 }
 
 .home img {
@@ -86,7 +87,7 @@ body {
 .home h1 {
   /* color: #203e03; */
   color: #0e1804;
-  font-size: 65px;
+  /* font-size: 65px; */
   /* font-family: canopee; */
   font-family: system-ui;
       font-variant-caps: petite-caps;
@@ -352,12 +353,12 @@ body {
 }
 
 /* after paralox sb set krne ke liye css */
-/* .sectionHome{
+.sectionHome{
   position: fixed;
-  left: 60px;
+  left: 7em;
 }
 
 .sectionProjects{
   position: relative;
   top: 100vh;
-} */
+}
