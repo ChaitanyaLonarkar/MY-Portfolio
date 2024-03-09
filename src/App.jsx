@@ -18,6 +18,7 @@ function App() {
     // display: "none"
 
   });
+  
   return (
     <>
           <Navbar />

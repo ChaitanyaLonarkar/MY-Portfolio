@@ -334,22 +334,34 @@ body {
 .projects{
   display: flex;
   gap: 20px;
-  /* justify-content: center; */
+  justify-content: center;
   /* align-items: center; */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .prights{
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   /* width: 700px; */
 
 }
-.project{
-  width: 98vw;
-  height: 50vh;
+.sectionProjects{
+color: whitesmoke;
   background-color: #070c33;
+}
+.project{
+  width: 50w;
+  height: 50vh;
+  border: 1px solid ;
+
+}
+marquee{
+  font-size: 50px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(226, 243, 255);
 }
 
 /* after paralox sb set krne ke liye css */
