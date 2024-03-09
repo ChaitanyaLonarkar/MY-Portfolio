@@ -7,6 +7,8 @@ body {
   --font-family-kaushan: "Kaushan Script", cursive;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1px;
+  /* --color-bg-alt: 240, 10%, 5%; */
+  /* background-color: #0B0B0D; */
 }
 .nav {
   display: flex;
@@ -160,8 +162,8 @@ body {
 
 .circles li:nth-child(1) {
   left: 25%;
-  width: 80px;
-  height: 80px;
+  width:22px;
+  height: 22px;
   animation-delay: 0s;
 }
 
@@ -171,8 +173,8 @@ body {
   height: 20px; */
   animation-delay: 2s;
   animation-duration: 12s;
-  width: 52px;
-  height: 52px;
+  width: 17px;
+  height: 17px;
 }
 
 .circles li:nth-child(3) {
@@ -184,8 +186,8 @@ body {
 
 .circles li:nth-child(4) {
   left: 40%;
-  width: 60px;
-  height: 60px;
+  width: 25px;
+  height: 25px;
   animation-delay: 0s;
   animation-duration: 11s;
 }
@@ -199,15 +201,15 @@ body {
 
 .circles li:nth-child(6) {
   left: 75%;
-  width: 110px;
-  height: 110px;
+  width: 27px;
+  height:27px;
   animation-delay: 3s;
 }
 
 .circles li:nth-child(7) {
   left: 35%;
-    width: 72px;
-    height: 70px;
+    width: 21px;
+    height: 21px;
     animation-delay: 7s;
 }
 
@@ -229,8 +231,8 @@ body {
 
 .circles li:nth-child(10) {
   left: 85%;
-  width: 100px;
-  height: 100px;
+  width: 20px;
+  height: 20px;
   animation-delay: 1s;
   animation-duration: 11s;
 }
@@ -344,9 +346,9 @@ body {
 
 }
 .project{
-  width: 700px;
-  height: 350px;
-  background-color: red;
+  width: 98vw;
+  height: 50vh;
+  background-color: #070c33;
 }
 
 /* after paralox sb set krne ke liye css */
