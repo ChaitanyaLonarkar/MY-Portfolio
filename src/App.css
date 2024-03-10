@@ -332,14 +332,14 @@ body {
 
 /* projets */
 .projects{
-  display: flex;
+  /* display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: center; */
   /* align-items: center; */
-  overflow-x: hidden;
 }
 .prights{
   display: flex;
+  overflow-x: hidden;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -351,7 +351,7 @@ color: whitesmoke;
   background-color: #070c33;
 }
 .project{
-  width: 50w;
+  width: 50vw;
   height: 50vh;
   border: 1px solid ;
 
