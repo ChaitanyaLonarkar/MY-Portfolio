@@ -35,14 +35,14 @@ export default function Project() {
           </marquee>
         </div>
         <div id="projects" className="projects">
-          {/* <div className="pleft">
+          <div className="pleft">
             <h2>Selected Works</h2>
             <p>
               I have a play a key role in developing impactful projects. Here
               are curated selection showcasing my expertise and achieved
               results.
             </p>
-          </div> */}
+          </div>
           {/* <div className="prights" onWheel={wheel}> */}
 
           <div className="prights">
