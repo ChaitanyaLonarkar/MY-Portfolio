@@ -14,7 +14,7 @@ export default function Navbar() {
           <div className="links">
             <ul>
               <li>Home</li>
-              <li>About</li>
+              <li> <a href="#">About</a></li>
               <li>Contact</li>
               <li>Projects</li>
             </ul>
