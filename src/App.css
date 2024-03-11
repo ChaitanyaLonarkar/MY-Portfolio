@@ -9,6 +9,13 @@ body {
   letter-spacing: 1px;
   /* --color-bg-alt: 240, 10%, 5%; */
   /* background-color: #0B0B0D; */
+  /* background: #093028;   */
+  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to top, #237A57, #093028);  */
+ /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to top, #237A57, #093028);  */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .nav {
   display: flex;
