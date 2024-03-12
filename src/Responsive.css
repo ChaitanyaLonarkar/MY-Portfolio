@@ -1,0 +1,22 @@
+
+@media only screen and (max-width: 800px) {
+    .home{
+        flex-wrap: wrap;
+        margin: 30px 20px;
+    }
+    .home .left {
+        font-size: x-large;
+        align-items: center;
+        padding: 0px;
+    }
+    .f{
+        width: 397px;
+        height: 69px;
+    }
+    .home img {
+        width: 250px;}
+        .sectionHome {
+            /* position: fixed; */
+            left: 0em;
+        }
+  }

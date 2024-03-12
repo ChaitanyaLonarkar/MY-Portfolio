@@ -53,11 +53,11 @@
 
 // horizontal sroll
 
-const scrollContainer = document.getElementById("projects");
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-});
+// const scrollContainer = document.getElementById("projects");
+// scrollContainer.addEventListener("wheel", (evt) => {
+//     evt.preventDefault();
+//     scrollContainer.scrollLeft += evt.deltaY;
+// });
 // const e =document.getElementsByClassName("project")
 // const element = document.getElementById("project");
 // element.innerHTML="pink"
