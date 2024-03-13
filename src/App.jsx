@@ -8,6 +8,7 @@ import Animation from "./Components/Animation";
 import Project from "./Components/Project";
 import { useParallax } from "react-scroll-parallax";
 import Skills from "./Components/Skills";
+import Preloader from "./Components/Preloader";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,7 +22,7 @@ function App() {
   });
   
   return (
-    <>
+    <><Preloader/>
           <Navbar />
         <div className="sectionHome" ref={parallax.ref}>
 
