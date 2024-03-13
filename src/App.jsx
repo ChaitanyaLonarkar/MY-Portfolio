@@ -4,6 +4,8 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "../src/Components/Navbar";
 import Home from "./Components/Home";
+import About from "./Components/About";
+
 import Animation from "./Components/Animation";
 import Project from "./Components/Project";
 import { useParallax } from "react-scroll-parallax";
@@ -32,6 +34,8 @@ function App() {
       </div>
       <div className="Allsection">
         {/* <Partiles/> */}
+        <About/>
+
         <Project />
         <Skills />
       </div>

@@ -20,7 +20,9 @@ export default function Project() {
 
   return (
     <>
-      <section className="sectionProjects" style={{ backgroundImage: `url(${background})` }}>
+      {/* <section className="sectionProjects" style={{ backgroundImage: `url(${background})` }}> */}
+
+      <section className="sectionProjects" >
         <div className="marq">
           <marquee
             onMouseOver={(e) => {

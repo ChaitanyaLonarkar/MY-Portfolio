@@ -5,17 +5,18 @@ body {
   --font-family-extra: "DM Sans", sans-serif;
   --font-family-oswald: "Oswald", sans-serif;
   --font-family-kaushan: "Kaushan Script", cursive;
+  --color-bg-alt: 240, 10%, 5%;
   font-family: "DM Sans", sans-serif;
+
   letter-spacing: 1px;
   /* --color-bg-alt: 240, 10%, 5%; */
   /* background-color: #0B0B0D; */
   /* background: #093028;   */
   /* fallback for old browsers */
-/* background: -webkit-linear-gradient(to top, #237A57, #093028);  */
- /* Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to top, #237A57, #093028);  */
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  /* background: -webkit-linear-gradient(to top, #237A57, #093028);  */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to top, #237A57, #093028);  */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .nav {
   display: flex;
@@ -39,7 +40,8 @@ body {
   align-items: center;
   /* background: #080a24; */
   /* color: #203e03; */
-  background-color: #152704;
+  /* background-color: #152704; */
+  background: linear-gradient(90deg, rgb(0 27 30) 0%, rgb(2 32 23) 100%);
   width: 75%;
   color: aliceblue;
   border-radius: 5px;
@@ -59,7 +61,7 @@ body {
 }
 
 /* home section */
-.sectionHome{
+.sectionHome {
   height: 100vh;
 }
 .home {
@@ -97,44 +99,43 @@ body {
   /* font-size: 65px; */
   /* font-family: canopee; */
   font-family: system-ui;
-      font-variant-caps: petite-caps;
+  font-variant-caps: petite-caps;
 }
-.home .kbtn button{
+.home .kbtn button {
   cursor: pointer;
-    border-radius: 4px;
-    padding: 10px 15px;
-    font-size: 20px;
-    border: none;
-    color:  #091a05;
-    background:#dbffb7  ;
-    transition: all 0.5s;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  color: #ffffff;
+  /* background: #dbffb7; */
+  background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%);
+  transition: all 0.5s;
 }
-.home .kbtn button:hover{
-
+.home .kbtn button:hover {
   color: #dbffb7;
-    background: #091a05;
+  background: #091a05;
 }
-.kbtn{
+.kbtn {
   display: flex;
   /* justify-content: space-between; */
   gap: 20px;
 }
-.slinks{
+.slinks {
   display: flex;
-    align-items: center;
-    font-size: xx-large;
-    gap: 10px;
+  align-items: center;
+  font-size: xx-large;
+  gap: 10px;
 }
-.slinks a{
-  color:#172c08 ;
+.slinks a {
+  color: #172c08;
   padding-top: 5px;
   transition: all 0.5s;
 }
-.slinks a:hover{
-  color:#94c274 ;
+.slinks a:hover {
+  color: #94c274;
   scale: 1.1;
   /* padding-top: 5px;/ */
-
 }
 
 /* animation =========================== */
@@ -162,7 +163,8 @@ body {
   /* background: rgba(255, 255, 255, 0.2); */
   /* background: rgb(29 45 9 / 36%);
    */
-  background: rgb(136 216 36 / 36%);
+  /* background: rgb(136 216 36 / 36%); */
+  background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%);
 
   animation: animate 25s linear infinite;
   bottom: -150px;
@@ -170,7 +172,7 @@ body {
 
 .circles li:nth-child(1) {
   left: 25%;
-  width:22px;
+  width: 22px;
   height: 22px;
   animation-delay: 0s;
 }
@@ -210,15 +212,15 @@ body {
 .circles li:nth-child(6) {
   left: 75%;
   width: 27px;
-  height:27px;
+  height: 27px;
   animation-delay: 3s;
 }
 
 .circles li:nth-child(7) {
   left: 35%;
-    width: 21px;
-    height: 21px;
-    animation-delay: 7s;
+  width: 21px;
+  height: 21px;
+  animation-delay: 7s;
 }
 
 .circles li:nth-child(8) {
@@ -277,7 +279,8 @@ body {
   width: 609px;
   left: -110px;
 
-  background: #d4ffa7;
+  /* background: #d4ffa7; */
+  background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%);
   animation: textrotate 3s linear infinite;
   /* -webkit-animation: textrotate 3s linear infinite; */
 }
@@ -337,60 +340,59 @@ body {
   
 } */
 
-.Allsection{
+.Allsection {
   position: relative;
   top: 90vh;
+  /* background: hsl(var(--color-bg-alt)); */
+  background: rgb(0, 19, 30);
+  background: linear-gradient(90deg, rgba(0, 19, 30, 1) 0%, rgb(0 6 11) 98%);
 }
 /* projets */
-.projects{
+.projects {
   display: flex;
   gap: 20px;
   /* justify-content: center; */
   /* align-items: center; */
   overflow-x: hidden;
 }
-.prights{
+.prights {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   /* width: 700px; */
-
 }
-.sectionProjects{
-color: whitesmoke;
-  background-color: #070c33;
+.sectionProjects {
+  color: whitesmoke;
+  /* background-color: #070c33; */
 }
-.project{
+.project {
   width: 30vw;
   height: 50vh;
-  border: 1px solid ;
-
+  border: 1px solid;
 }
-.pleft{
+.pleft {
   font-size: xx-large;
   padding: 50px;
 }
-marquee{
+marquee {
   font-size: 50px;
-    font-weight: 900;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(226, 243, 255);
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(226, 243, 255);
 }
 
 /* after paralox sb set krne ke liye css */
-.sectionHome{
+.sectionHome {
   position: fixed;
   left: 7em;
 }
 
-.sectionProjects{
-  
+.sectionProjects {
   /* width: 100vw; */
   height: 100vh;
   background-size: cover;
   background-position: bottom;
   /* background-image: u); */
 }
-
