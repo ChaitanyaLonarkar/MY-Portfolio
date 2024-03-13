@@ -15,6 +15,10 @@ export default function Animation() {
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </div></>
   )

@@ -133,7 +133,8 @@ body {
   transition: all 0.5s;
 }
 .slinks a:hover {
-  color: #94c274;
+  color: #175c44;
+  /* color: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%); */
   scale: 1.1;
   /* padding-top: 5px;/ */
 }
@@ -160,18 +161,19 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
+  background: rgb(38 121 97 / 84%);
   /* background: rgba(255, 255, 255, 0.2); */
   /* background: rgb(29 45 9 / 36%);
    */
   /* background: rgb(136 216 36 / 36%); */
-  background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%);
+  /* background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%); */
 
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
 
 .circles li:nth-child(1) {
-  left: 25%;
+  left: 15%;
   width: 22px;
   height: 22px;
   animation-delay: 0s;
@@ -199,7 +201,7 @@ body {
   width: 25px;
   height: 25px;
   animation-delay: 0s;
-  animation-duration: 11s;
+  animation-duration: 21s;
 }
 
 .circles li:nth-child(5) {
@@ -228,7 +230,7 @@ body {
   width: 25px;
   height: 25px;
   animation-delay: 10s;
-  animation-duration: 45s;
+  animation-duration: 21s;
 }
 
 .circles li:nth-child(9) {
@@ -236,15 +238,44 @@ body {
   width: 15px;
   height: 15px;
   animation-delay: 2s;
-  animation-duration: 35s;
+  animation-duration: 25s;
 }
 
 .circles li:nth-child(10) {
-  left: 85%;
-  width: 20px;
-  height: 20px;
+  left: 81%;
+  width: 42px;
+  height: 42px;
   animation-delay: 1s;
   animation-duration: 11s;
+}
+.circles li:nth-child(11) {
+  left: 25%;
+  width: 38px;
+  height: 38px;
+  animation-delay: 1s;
+  animation-duration: 17s;
+
+}.circles li:nth-child(12) {
+  left: 68%;
+  width: 51px;
+  height: 51px;
+  animation-delay: 1s;
+  animation-duration: 15s;
+
+}.circles li:nth-child(13) {
+  left: 58%;
+  width: 41px;
+  height: 41px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+
+}.circles li:nth-child(14) {
+  left: 29%;
+  width: 33px;
+  height: 33px;
+  animation-delay: 0s;
+  animation-duration: 14s;
+
 }
 
 @keyframes animate {
