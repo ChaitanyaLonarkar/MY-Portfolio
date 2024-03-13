@@ -2,6 +2,13 @@ import React from 'react'
 
 export default function Skills() {
   return (
-    <>Skills</>
+    <>
+    <section>
+
+    <div className="skill">
+        Java
+        </div>
+    </section>
+        </>
   )
 }
