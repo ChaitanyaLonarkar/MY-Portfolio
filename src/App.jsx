@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import Animation from "./Components/Animation";
 import Project from "./Components/Project";
 import { useParallax } from "react-scroll-parallax";
+import Skills from "./Components/Skills";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
         </div>
       {/* <marquee onmouseover="this.stop();" onmouseout="this.start();">jhdhfjasdfhasdjkfhjkashdjfhjashdjfhjsahdhfjkshdjkfhjsahdjfhjasdf</marquee> */}
       <Project />
+      <Skills/>
     </>
   );
 }
