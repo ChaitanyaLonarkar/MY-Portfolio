@@ -61,8 +61,11 @@ body {
 }
 
 /* home section */
-.sectionHome {
+#sectionHome {
   height: 100vh;
+}
+.hidden{
+  display: hidden;
 }
 .home {
   display: flex;
@@ -370,7 +373,18 @@ body {
 /*}
   
 } */
+.about{
+  height: 68vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding: 109px;
 
+}
 .Allsection {
   position: relative;
   top: 90vh;
@@ -415,7 +429,7 @@ marquee {
 }
 
 /* after paralox sb set krne ke liye css */
-.sectionHome {
+#sectionHome {
   position: fixed;
   left: 7em;
 }

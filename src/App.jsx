@@ -18,16 +18,37 @@ function App() {
   const parallax = useParallax({
     // rotate: [0, 360],
     scale: [1.1, 0.7, "easeInQuad"],
-    display: ["flex", "none"],
+    
     // translateY: [ 0,20 ],
-    // display: "none"
+    // display: ["flex","none","easeInQuad"]
   });
+
+  // const [hideHomePage, setHideHomePage] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY >= window.innerHeight) {
+  //       // setHideHomePage(true);
+  //       const home=document.getElementById("sectionHome")
+  //       home.style.display="hidden"
+  //     } else {
+  //       setHideHomePage(false);
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+
 
   return (
     <>
       <Preloader />
       <Navbar />
-      <div className="sectionHome" ref={parallax.ref}>
+      <div id="sectionHome" ref={parallax.ref}>
         {/* <div className="sectionHome" > */}
         <Animation />
         <Home />
@@ -35,7 +56,6 @@ function App() {
       <div className="Allsection">
         {/* <Partiles/> */}
         <About/>
-
         <Project />
         <Skills />
       </div>
