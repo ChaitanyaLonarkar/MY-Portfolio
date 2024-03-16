@@ -25,7 +25,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.nav a {
+.nav .nav a {
   text-decoration: none;
   color: aliceblue;
   display: flex;
@@ -36,13 +36,12 @@ body {
 .nav svg {
   font-size: 23px;
 }
-.nav .logo{
-  
-    font-family: "Kaushan Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-  
-    font-size: 18px;
+.nav .logo {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 18px;
 }
 .outer {
   display: flex;
@@ -62,6 +61,15 @@ body {
   width: 34px;
   filter: invert(1);
 }
+/* .outer .links {
+  background: linear-gradient(90deg, rgb(0 27 30) 0%, rgb(2 32 23) 100%);
+  padding: 15px; */
+  /* mix-blend-mode: plus-lighter; */
+  /* border-radius: 6%;
+  position: fixed;
+  z-index: 5; */
+  /* border: 1px solid; */
+/* } */
 .links ul {
   display: flex;
   justify-content: center;
@@ -74,7 +82,7 @@ body {
 #sectionHome {
   height: 100vh;
 }
-.hidden{
+.hidden {
   display: hidden;
 }
 .home {
@@ -267,28 +275,27 @@ body {
   height: 38px;
   animation-delay: 1s;
   animation-duration: 17s;
-
-}.circles li:nth-child(12) {
+}
+.circles li:nth-child(12) {
   left: 68%;
   width: 51px;
   height: 51px;
   animation-delay: 1s;
   animation-duration: 15s;
-
-}.circles li:nth-child(13) {
+}
+.circles li:nth-child(13) {
   left: 58%;
   width: 41px;
   height: 41px;
   animation-delay: 0s;
   animation-duration: 11s;
-
-}.circles li:nth-child(14) {
+}
+.circles li:nth-child(14) {
   left: 29%;
   width: 33px;
   height: 33px;
   animation-delay: 0s;
   animation-duration: 14s;
-
 }
 
 @keyframes animate {
@@ -383,7 +390,7 @@ body {
 /*}
   
 } */
-.about{
+.about {
   height: 68vh;
   width: 100%;
   color: white;
@@ -393,7 +400,6 @@ body {
   gap: 50px;
   align-items: center;
   padding: 109px;
-
 }
 .Allsection {
   position: relative;
