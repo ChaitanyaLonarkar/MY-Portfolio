@@ -427,6 +427,17 @@ body {
   font-size: xx-large;
   padding: 50px;
 }
+.pleft h2 {
+   font-size: 3.7rem;
+  color: aliceblue;
+  font-weight: 300;
+
+  padding-top: 50px;
+}
+.pleft p {
+  font-size: 1.3rem;
+}
+
 marquee {
   font-size: 50px;
   font-weight: 900;
