@@ -160,7 +160,7 @@ body {
 
 .circles {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -294,7 +294,7 @@ body {
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
-    opacity: 1;
+    opacity: 0.8;
     border-radius: 0;
   }
 
@@ -442,7 +442,8 @@ marquee {
 /* after paralox sb set krne ke liye css */
 #sectionHome {
   position: fixed;
-  left: 7em;
+  /* left: 7em; */
+  width: 100vw;
 }
 
 .sectionProjects {
