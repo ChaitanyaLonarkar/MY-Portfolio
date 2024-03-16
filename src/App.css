@@ -390,17 +390,7 @@ body {
 /*}
   
 } */
-.about {
-  height: 68vh;
-  width: 100%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center;
-  padding: 109px;
-}
+
 .Allsection {
   position: relative;
   top: 90vh;
