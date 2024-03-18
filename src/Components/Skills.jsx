@@ -92,12 +92,7 @@ export default function Skills() {
     //   </div>
     // </div>
     <>
-    <div className="wrap">
-
-    <div className="poly">
-      .
-    </div>
-    </div>
+      
     </>
   );
 }
