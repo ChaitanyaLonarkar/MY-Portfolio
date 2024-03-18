@@ -32,21 +32,21 @@ export default function About() {
                 <h2>Computer science engineering</h2>
                 <p>2022-2025</p>
               </div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>I'm 3rd year Btech Student from SB Jain COE Nagpur</p>
             </div>
             <div className="edu">
               <div className="edu-year">
                 <h2>Computer engineering</h2>
                 <p>2020-2022</p>
               </div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Completed Diploma in Computer Engineering from GP Gondia</p>
             </div>
             <div className="edu">
               <div className="edu-year">
                 <h2>HSC</h2>
                 <p>2018-2020</p>
               </div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Completed HSC in Science from DB Science Gondia</p>
             </div>
           </div>
         </div>

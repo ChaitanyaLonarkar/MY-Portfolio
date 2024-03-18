@@ -36,6 +36,10 @@
   border-bottom: 1px solid gray;
   padding-bottom: 5px;
 }
+.edu p{
+  font-size: 14px;
+    color: #74afaf;
+}
 .edu-year {
   display: flex;
   justify-content: space-between;
