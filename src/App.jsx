@@ -52,6 +52,7 @@ function App() {
         <About/>
         <Skills />
         <Project />
+        {/* <Partiles/> */}
       </div>
     </>
   );

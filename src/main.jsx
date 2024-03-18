@@ -5,6 +5,8 @@ import "./Responsive.css";
 import "./css/Preloader.css";
 import "./css/Skills.css";
 import "./css/About.css";
+import "./css/Liquid.css";
+
 
 
 
