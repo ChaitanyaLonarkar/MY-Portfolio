@@ -3,7 +3,7 @@ import myimg from "../assets/img/imgCcc.jpg";
 import myimg2 from "../assets/img/bimg.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
-import { FaSquareTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { useParallax } from "react-scroll-parallax";
 import { useState, useEffect } from "react";
 
@@ -44,7 +44,7 @@ export default function Home() {
                 <FaSquareGithub />
               </a>
               <a href="http://" target="_blank">
-                <FaSquareTwitter />
+                <FaSquareXTwitter />
               </a>
               {/* <a href="http://" target="_blank"></a> */}
             </div>

@@ -17,7 +17,7 @@ export default function About() {
             success. I enjoy every step of the design process, from discussion
             and collaboration.
           </p>
-          <a href="http://" target="_blank" rel="noopener noreferrer">Download CV<HiOutlineDocumentArrowDown /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Download CV<HiOutlineDocumentArrowDown style={{fontSize:'x-large'}}/></a>
           
         </div>
         <div className="education">

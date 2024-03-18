@@ -70,3 +70,6 @@ HiOutlineDocumentArrowDown{
     background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%);
     color: aliceblue;
 }
+.about-head p{
+  color: #32e9bd;
+}

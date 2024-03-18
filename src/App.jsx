@@ -50,8 +50,8 @@ function App() {
       <div className="Allsection">
         {/* <Partiles/> */}
         <About/>
-        <Project />
         <Skills />
+        <Project />
       </div>
     </>
   );
