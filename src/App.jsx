@@ -22,7 +22,7 @@ function App() {
         setHideHomePage(true);
         // console.log("chaitanya")
         // const home=document.getElementById("sectionHome")
-        // home.style.display="hidden"
+        // home.style.display="none"
       } else {
         setHideHomePage(false);
         // console.log("no")
@@ -44,7 +44,7 @@ function App() {
       <Navbar />
         <Animation />
       <div id="sectionHome" >
-        {setHideHomePage?<Home />:""}
+        {hideHomePage?"":<Home />}
         
       </div>
       <div className="Allsection">
