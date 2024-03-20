@@ -29,6 +29,7 @@ export default function Project() {
               pin: true,
               scrub: true,
               invalidateOnRefresh: true,
+              markers:true,
           }
       });
       let mm = gsap.matchMedia();
@@ -50,12 +51,12 @@ export default function Project() {
 
   }, { scope: galleryContainer });
 
-  const scrollToSection = contextSafe((e) => {
-      gsap.to(window, {
-          duration: 1,
-          scrollTo: e
-      });
-  });
+  // const scrollToSection = contextSafe((e) => {
+  //     gsap.to(window, {
+  //         duration: 1,
+  //         scrollTo: e
+  //     });
+  // });
 
 
   //   const element = document.getElementById("projects");
