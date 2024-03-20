@@ -64,11 +64,11 @@ body {
 /* .outer .links {
   background: linear-gradient(90deg, rgb(0 27 30) 0%, rgb(2 32 23) 100%);
   padding: 15px; */
-  /* mix-blend-mode: plus-lighter; */
-  /* border-radius: 6%;
+/* mix-blend-mode: plus-lighter; */
+/* border-radius: 6%;
   position: fixed;
   z-index: 5; */
-  /* border: 1px solid; */
+/* border: 1px solid; */
 /* } */
 .links ul {
   display: flex;
@@ -403,10 +403,22 @@ body {
 /* projets */
 .projects {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   /* justify-content: center; */
   /* align-items: center; */
   overflow-x: hidden;
+  translate: none;
+  rotate: none;
+  scale: none;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  max-width: 8423.04px;
+  width: 8423.04px;
+  background: black;
+  /* max-height: 410.4px;
+  height: 410.4px; */
+  padding: 90px;
+  transform: translate(0px, 0px);
 }
 .prights {
   display: flex;
@@ -417,6 +429,8 @@ body {
 }
 .sectionProjects {
   color: whitesmoke;
+  overflow: hidden;
+
   /* background-color: #070c33; */
 }
 .project {
@@ -424,41 +438,40 @@ body {
   height: 50vh;
   border: 1px solid;
 }
-.projects a{
+.projects a {
   background: white;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    width: 8rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    font-size: medium;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    transition: all 1s;
-    cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  width: 8rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: all 1s;
+  cursor: pointer;
 }
 .pleft {
-  font-size: xx-large;
-  padding: 50px;
+  /* font-size: xx-large; */
+  /* padding: 50px; */
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 30vw;
 }
 .pleft h2 {
-   font-size: 3.7rem;
+  font-size: 3.7rem;
   /* color: aliceblue; */
   font-weight: 300;
   padding-top: 50px;
   color: #00ffcb;
-
-
 }
 .pleft p {
-  font-size: 1.3rem;
+  font-size: 1.05rem;
 }
 
 marquee {
