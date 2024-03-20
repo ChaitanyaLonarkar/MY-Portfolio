@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 import background from "../assets/img/background.jpg"
+import { FaGithub } from "react-icons/fa6";
+
 export default function Project() {
   //   const element = document.getElementById("projects");
   //   useEffect(() => {
@@ -44,6 +46,12 @@ export default function Project() {
               are curated selection showcasing my expertise and achieved
               results.
             </p>
+            <div className="git">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+              Github
+            </a>
+          </div>
           </div>
           {/* <div className="prights" onWheel={wheel}> */}
 

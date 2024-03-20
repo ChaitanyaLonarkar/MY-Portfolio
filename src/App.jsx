@@ -10,6 +10,8 @@ import Project from "./Components/Project";
 import Skills from "./Components/Skills";
 import Preloader from "./Components/Preloader";
 import Partiles from "./Components/Partiles";
+import { useParallax } from "react-scroll-parallax";
+
 
 function App() {
   
@@ -21,8 +23,8 @@ function App() {
       if (window.scrollY >= window.innerHeight) {
         setHideHomePage(true);
         // console.log("chaitanya")
-        // const home=document.getElementById("sectionHome")
-        // home.style.display="none"
+        // const home=document.getElementById("Allsection")
+        // home.style.scale="1"
       } else {
         setHideHomePage(false);
         // console.log("no")
@@ -37,17 +39,29 @@ function App() {
     // };
   // }, []);
 
+  // // const [count, setCount] = useState(0);
+  // const parallax = useParallax({
+  //   // rotate: [0, 360],
+  //   scale: [0.95,1.1, "easeOutBack"],
+    
+  //   // translateY: [ 0,20 ],
+  //   // display: ["flex","none","easeInQuad"]
+  // });
+
+
 
   return (
     <>
       <Preloader />
       <Navbar />
         <Animation />
-      <div id="sectionHome" >
-        {hideHomePage?"":<Home />}
+      
+        {hideHomePage?"":<div id="sectionHome" ><Home /></div>}
         
-      </div>
-      <div className="Allsection">
+      
+      {/* <div className="Allsection" ref={parallax.ref}> */}
+      <div  id="Allsection"className="Allsection" >/
+
         {/* <Partiles/> */}
         <About/>
         <Skills />
