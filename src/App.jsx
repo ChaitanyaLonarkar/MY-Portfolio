@@ -64,8 +64,8 @@ function App() {
 
         {/* <Partiles/> */}
         <About/>
-        <Skills />
         <Project />
+        <Skills />
         {/* <Partiles/> */}
       </div>
     </>

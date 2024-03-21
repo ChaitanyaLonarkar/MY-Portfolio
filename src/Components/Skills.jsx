@@ -53,46 +53,45 @@ export default function Skills() {
   // };
 
   return (
-    // <div id="dragger-container" onMouseDown={handleMouseDown}>
-    //   <div id="dragger" style={{ transform: `rotate(${angle}deg)` }}>
-    //     <div className="skills-container">
-    //       <div className="dragger">
-    //         <div className="dragger-inner">
-    //           <div className="dragger-item">
-    //             <img src="html.png" alt="HTML" />
-    //             express
-    //           </div>
-    //           <div className="dragger-item">
-    //             <img src="css.png" alt="CSS" />
-    //             express
-    //           </div>
-    //           <div className="dragger-item">
-    //             <img src="js.png" alt="JavaScript" />
-    //             express
-    //           </div>
-    //           <div className="dragger-item">
-    //             <img src="react.png" alt="React" />
-    //             express
-    //           </div>
-    //           <div className="dragger-item">
-    //             <img src="tailwind.png" alt="Tailwind CSS" />
-    //             express
-    //           </div>
-    //           <div className="dragger-item">
-    //             <img src="node.png" alt="Node" />
-    //             express
-    //           </div>
-    //           <div className="dragger-item">
-    //             <img src="express.png" alt="Express" />
-    //             express
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <>
-      
+      <div id="dragger-container" >
+        <div id="dragger"  >
+          <div className="skills-container">
+            <div className="dragger">
+              <div className="dragger-inner">
+                <div className="dragger-item">
+                  <img src="html.png" alt="HTML" />
+                  express
+                </div>
+                <div className="dragger-item">
+                  <img src="css.png" alt="CSS" />
+                  express
+                </div>
+                <div className="dragger-item">
+                  <img src="js.png" alt="JavaScript" />
+                  express
+                </div>
+                <div className="dragger-item">
+                  <img src="react.png" alt="React" />
+                  express
+                </div>
+                <div className="dragger-item">
+                  <img src="tailwind.png" alt="Tailwind CSS" />
+                  express
+                </div>
+                <div className="dragger-item">
+                  <img src="node.png" alt="Node" />
+                  express
+                </div>
+                <div className="dragger-item">
+                  <img src="express.png" alt="Express" />
+                  express
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

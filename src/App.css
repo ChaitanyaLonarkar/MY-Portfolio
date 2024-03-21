@@ -419,6 +419,8 @@ body {
   height: 410.4px; */
   padding: 90px;
   transform: translate(0px, 0px);
+  height: 100vh;
+
 }
 .prights {
   display: flex;

@@ -22,7 +22,7 @@ export default function Project() {
       let tl = gsap.timeline({
           scrollTrigger: {
               trigger: gallery,
-              start: 'top top',
+              start: 'top',
               end: () => {
                   return `+=${(gallery?.clientWidth) - window.innerWidth}`;
               },
@@ -51,12 +51,12 @@ export default function Project() {
 
   }, { scope: galleryContainer });
 
-  // const scrollToSection = contextSafe((e) => {
-  //     gsap.to(window, {
-  //         duration: 1,
-  //         scrollTo: e
-  //     });
-  // });
+  const scrollToSection = contextSafe((e) => {
+      gsap.to(window, {
+          duration: 1,
+          scrollTo: e
+      });
+  });
 
 
   //   const element = document.getElementById("projects");
