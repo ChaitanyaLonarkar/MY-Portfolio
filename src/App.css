@@ -415,10 +415,8 @@ body {
   max-width: 4023.04px;
   width: 4023.04px;
   background: black;
-  /* max-height: 410.4px;
-  height: 410.4px; */
-  padding: 90px;
-  transform: translate(0px, 0px);
+ 
+  
   height: 100vh;
 
 }

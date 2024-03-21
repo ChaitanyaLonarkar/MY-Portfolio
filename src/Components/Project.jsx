@@ -22,7 +22,7 @@ export default function Project() {
       let tl = gsap.timeline({
           scrollTrigger: {
               trigger: gallery,
-              start: 'top',
+              start: 'top 5%',
               end: () => {
                   return `+=${(gallery?.clientWidth) - window.innerWidth}`;
               },
@@ -33,11 +33,11 @@ export default function Project() {
           }
       });
       let mm = gsap.matchMedia();
-      mm.add("(max-width: 991px)", () => {
-          tl.to(gallery, {
-              ease: 'none',
-          });
-      });
+      // mm.add("(max-width: 991px)", () => {
+      //     tl.to(gallery, {
+      //         ease: 'none',
+      //     });
+      // });
       mm.add("(min-width: 992px)", () => {
           tl.to(gallery, {
               x: () => {
