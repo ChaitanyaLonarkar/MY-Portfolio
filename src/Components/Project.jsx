@@ -9,9 +9,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function Project() {
 
   const galleryContainer = useRef();
-  const bg = useRef();
-  const container = useRef();
-  const { contextSafe } = useGSAP({scope: container});
+  // const bg = useRef();
+  // const container = useRef();
+  // const { contextSafe } = useGSAP({scope: container});
 
   useGSAP(() => {
       gsap.registerPlugin(ScrollTrigger);
@@ -22,14 +22,15 @@ export default function Project() {
       let tl = gsap.timeline({
           scrollTrigger: {
               trigger: gallery,
-              start: 'top 5%',
+              x:5,
+              start: 'top',
               end: () => {
                   return `+=${(gallery?.clientWidth) - window.innerWidth}`;
               },
               pin: true,
               scrub: true,
               invalidateOnRefresh: true,
-              markers:true,
+              // markers:true,
           }
       });
       let mm = gsap.matchMedia();
@@ -51,12 +52,12 @@ export default function Project() {
 
   }, { scope: galleryContainer });
 
-  const scrollToSection = contextSafe((e) => {
-      gsap.to(window, {
-          duration: 1,
-          scrollTo: e
-      });
-  });
+  // const scrollToSection = contextSafe((e) => {
+  //     gsap.to(window, {
+  //         duration: 1,
+  //         scrollTo: e
+  //     });
+  // });
 
 
   //   const element = document.getElementById("projects");

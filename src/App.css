@@ -362,11 +362,7 @@ body {
   }
 }
 
-.home .f {
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  /* animation: animation1 5s  infinite ease-in; */
-  /* animation-delay: 1s; */
-}
+
 
 /* @keyframes animation1 {
   0%{
@@ -416,7 +412,8 @@ body {
   width: 4023.04px;
   background: black;
  
-  
+  padding: 90px;
+  /* transform: translate(0px, 0px); */
   height: 100vh;
 
 }
