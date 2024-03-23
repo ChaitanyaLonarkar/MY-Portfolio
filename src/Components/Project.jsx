@@ -5,6 +5,7 @@ import React, { useRef } from 'react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import p1 from "../assets/img/p1.png"
 
 export default function Project() {
 
@@ -44,7 +45,7 @@ export default function Project() {
       let tl = gsap.timeline({
           scrollTrigger: {
               trigger: gallery,
-              // x:5,
+              x:5,
               start: 'top',
               end: () => {
                   return `+=${(gallery?.clientWidth) - window.innerWidth}`;
@@ -136,15 +137,143 @@ export default function Project() {
 
             <div className="prights">
               <div id="project" className="project">
-                netflix clone
+                <div className="pimg">
+                  <img src={p1} alt="" />
+                </div>
+                <div className="desc">
+                  <h3 className="title">
+                    NEtflix clone
+                  </h3>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem corporis sed dolore voluptatibus, expedita sequi nostrum facilis illo necessitatibus voluptatum inventore soluta in aperiam. In sit unde maiores! Debitis, quae.
+                  </div>
+                  <div className="techstack">
+                    <div className="thead">
+                      <b>Technical Stack :</b>
+                    </div>
+                    <div className="stack">
+
+                    html css js 
+                    </div>
+                  </div>
+                  <div className="live">
+                    <a href="//">Preview</a>
+                    <a href="//">Code</a>
+
+                  </div>
+                </div>
+               
               </div>
-              <div className="project">Animated wesites</div>
-              <div className="project">Animated wesites</div>
-              <div className="project">Animated wesites</div>
-              <div className="project">Animated wesites</div>
-              <div className="project">Animated wesites</div>
-              <div className="project">Animated wesites</div>
-              <div className="project">Animated wesites</div>
+            
+              <div id="project" className="project">
+                <div className="pimg">
+                  <img src={p1} alt="" />
+                </div>
+                <div className="desc">
+                  <h3 className="title">
+                    NEtflix clone
+                  </h3>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem corporis sed dolore voluptatibus, expedita sequi nostrum facilis illo necessitatibus voluptatum inventore soluta in aperiam. In sit unde maiores! Debitis, quae.
+                  </div>
+                  <div className="techstack">
+                    <div className="thead">
+                      <b>Technical Stack :</b>
+                    </div>
+                    <div className="stack">
+
+                    html css js 
+                    </div>
+                  </div>
+                  <div className="live">
+                    <a href="//">Preview</a>
+                    <a href="//">Code</a>
+
+                  </div>
+                </div>
+               
+              </div><div id="project" className="project">
+                <div className="pimg">
+                  <img src={p1} alt="" />
+                </div>
+                <div className="desc">
+                  <h3 className="title">
+                    NEtflix clone
+                  </h3>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem corporis sed dolore voluptatibus, expedita sequi nostrum facilis illo necessitatibus voluptatum inventore soluta in aperiam. In sit unde maiores! Debitis, quae.
+                  </div>
+                  <div className="techstack">
+                    <div className="thead">
+                      <b>Technical Stack :</b>
+                    </div>
+                    <div className="stack">
+
+                    html css js 
+                    </div>
+                  </div>
+                  <div className="live">
+                    <a href="//">Preview</a>
+                    <a href="//">Code</a>
+
+                  </div>
+                </div>
+               
+              </div><div id="project" className="project">
+                <div className="pimg">
+                  <img src={p1} alt="" />
+                </div>
+                <div className="desc">
+                  <h3 className="title">
+                    NEtflix clone
+                  </h3>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem corporis sed dolore voluptatibus, expedita sequi nostrum facilis illo necessitatibus voluptatum inventore soluta in aperiam. In sit unde maiores! Debitis, quae.
+                  </div>
+                  <div className="techstack">
+                    <div className="thead">
+                      <b>Technical Stack :</b>
+                    </div>
+                    <div className="stack">
+
+                    html css js 
+                    </div>
+                  </div>
+                  <div className="live">
+                    <a href="//">Preview</a>
+                    <a href="//">Code</a>
+
+                  </div>
+                </div>
+               <div id="project" className="project">
+                <div className="pimg">
+                  <img src={p1} alt="" />
+                </div>
+                <div className="desc">
+                  <h3 className="title">
+                    NEtflix clone
+                  </h3>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem corporis sed dolore voluptatibus, expedita sequi nostrum facilis illo necessitatibus voluptatum inventore soluta in aperiam. In sit unde maiores! Debitis, quae.
+                  </div>
+                  <div className="techstack">
+                    <div className="thead">
+                      <b>Technical Stack :</b>
+                    </div>
+                    <div className="stack">
+
+                    html css js 
+                    </div>
+                  </div>
+                  <div className="live">
+                    <a href="//">Preview</a>
+                    <a href="//">Code</a>
+
+                  </div>
+                </div>
+               
+              </div>
+              </div>
             </div>
           </div>
         </div>
