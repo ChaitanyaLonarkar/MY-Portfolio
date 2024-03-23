@@ -403,14 +403,15 @@ body {
   /* justify-content: center; */
   /* align-items: center; */
   overflow-x: hidden;
-  translate: none;
-  rotate: none;
-  scale: none;
-  inset: 0px auto auto 0px;
+  /* translate: none; */
+  /* rotate: none; */
+  /* scale: none; */
+  /* inset: 0px auto auto 0px; */
   margin: 0px;
   max-width: 4023.04px;
   width: 4023.04px;
   background: black;
+  /* width: 4000px; */
  
   padding: 90px;
   /* transform: translate(0px, 0px); */

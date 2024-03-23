@@ -9,20 +9,42 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function Project() {
 
   const galleryContainer = useRef();
-  // const bg = useRef();
+  const bg = useRef();
   // const container = useRef();
   // const { contextSafe } = useGSAP({scope: container});
 
   useGSAP(() => {
       gsap.registerPlugin(ScrollTrigger);
       const gallery = galleryContainer.current;
+      const bgg = bg.current;
+
+      // let gallerywidth=gallery.offsetWidth;
+      // console.log(gallerywidth,"kjkj")
+      // let amountToScroll=galleryContainer-window.innerWidth;
+      // console.log(amountToScroll,"khjkhjh")
+
+      // const tween=gsap.to(gallery,{
+      //   x:-amountToScroll,
+      //   duration:3,
+      //   ease:"none"
+      // })
+      // ScrollTrigger.create( {
+      //   trigger:bgg,
+      //   start:"top 5%",
+      //   end:"+="
+      //   +amountToScroll,
+      //   pin:true,
+      //   animation:true,
+      //   scrub:1,
+      //   markers:true
+      // })
 
      
       // Horizontal Scroll
       let tl = gsap.timeline({
           scrollTrigger: {
               trigger: gallery,
-              x:5,
+              // x:5,
               start: 'top',
               end: () => {
                   return `+=${(gallery?.clientWidth) - window.innerWidth}`;
@@ -30,7 +52,7 @@ export default function Project() {
               pin: true,
               scrub: true,
               invalidateOnRefresh: true,
-              // markers:true,
+              markers:true,
           }
       });
       let mm = gsap.matchMedia();
@@ -39,16 +61,16 @@ export default function Project() {
       //         ease: 'none',
       //     });
       // });
-      mm.add("(min-width: 992px)", () => {
+      // mm.add("(min-width: 992px)", () => {
           tl.to(gallery, {
               x: () => {
                   return `-${(gallery?.clientWidth) - window.innerWidth}`;
               },
               ease: 'none',
           });
-      });
+      // });
 
-
+// console.log(`${(gallery?.clientWidth) - window.innerWidth} hjghghgh`) 2487px
 
   }, { scope: galleryContainer });
 
@@ -94,7 +116,7 @@ export default function Project() {
             Showcasing Showcasing Showcasing Showcasing
           </marquee>
         </div>
-        <div className="p">
+        <div className="p" ref={bg}>
           <div id="projects" className="projects" ref={galleryContainer}>
             <div className="pleft">
               <h2>Selected <br />Works</h2>
