@@ -194,7 +194,7 @@ export default function Skills() {
                     <Blobs type={'v1'} classVariable={`blob blobV1`}/>
                 </div> */}
         <div className={"grid"}>
-          <div color={"white"}>
+          <div className={"white"}>
             <span>My</span> <br /> Skillset
           </div>
           <div className={"circularCarouselWrapper"}>
