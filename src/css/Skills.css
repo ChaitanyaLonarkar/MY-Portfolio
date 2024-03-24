@@ -6,7 +6,7 @@
     /* width: 200px;
     height: 200px; */
     position: relative;
-    top:3000px;
+    /* top:3000px; */
     /* background-color: transparent; */
     /* background: linear-gradient(90deg, rgb(10 21 27) 0%, rgb(3 28 32) 98%); */
     background: linear-gradient(90deg, rgba(10, 21, 27, 0.466) 0%, rgba(3, 28, 32, 0.405) 98%);
