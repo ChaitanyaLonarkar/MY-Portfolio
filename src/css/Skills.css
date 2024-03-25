@@ -39,7 +39,8 @@
   color: #f0f0f0;
   position: relative;
   padding: var(--x-spacing) 0;
-  background: hsl(var(--color-bg-alt));
+  /* background: hsl(var(--color-bg-alt)); */
+  background: linear-gradient(90deg, rgb(14 14 26) 0%, rgb(11 11 18) 98%);
 }
 .grid {
   display: grid;

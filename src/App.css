@@ -394,5 +394,8 @@ body {
   /* background: hsl(var(--color-bg-alt)); */
   /* background: rgb(0, 19, 30);
   background: linear-gradient(90deg, rgba(0, 19, 30, 1) 0%, rgb(0 6 11) 98%); */
-  background: linear-gradient(90deg, rgb(10 21 27) 0%, rgb(3 28 32) 98%);
+  /* background: linear-gradient(90deg, rgb(10 21 27) 0%, rgb(3 28 32) 98%); */
+  /* background: linear-gradient(90deg, rgb(1 1 10) 0%, rgb(11 11 14) 98%); */
+  /* background: hsl(var(--color-bg-alt)); */
+  background: linear-gradient(90deg, rgb(14 14 26) 0%, rgb(11 11 18) 98%);
 }

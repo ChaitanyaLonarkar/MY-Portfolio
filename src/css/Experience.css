@@ -4,7 +4,8 @@
   padding: 5rem;
   color: rgba(197, 198, 199, 0.918);
   /* background-color: ; */
-  background: hsl(var(--color-bg-alt));
+  background: linear-gradient(90deg, rgb(14 14 26) 0%, rgb(11 11 18) 98%);
+  /* background: hsl(var(--color-bg-alt)); */
   width: 98.8vw;
   /* height: 100vh; */
   gap: 5rem;
@@ -50,4 +51,5 @@
 }
 b{
     font-weight: 500;
+
 }

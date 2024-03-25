@@ -1,6 +1,7 @@
 .sectionn {
   position: relative;
-  background-color: hsl(var(--color-bg-alt));
+  background: linear-gradient(90deg, rgb(14 14 26) 0%, rgb(11 11 18) 98%);
+  /* background-color: hsl(var(--color-bg-alt)); */
   padding: var(--x-spacing) 0;
   max-width: 100dvw;
   overflow: hidden;

@@ -132,9 +132,9 @@ export default function Skills() {
           toggleActions: "play none none reverse",
         },
       });
-      sphereTL.from(sphere.current, {
-        yPercent: -200,
-      });
+      // sphereTL.from(sphere.current, {
+      //   yPercent: -200,
+      // });
 
       handleResize();
       window.addEventListener("resize", handleResize);
