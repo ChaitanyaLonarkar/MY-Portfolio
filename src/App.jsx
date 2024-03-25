@@ -4,6 +4,10 @@ import "./App.css";
 import Navbar from "../src/Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
+import Creative from "./Components/Creative";
+import Experience from "./Components/Experience";
+
+
 
 import Animation from "./Components/Animation";
 import Project from "./Components/Project";
@@ -66,6 +70,8 @@ function App() {
         <About/>
         <Project />
         <Skills />
+        <Creative/>
+        <Experience/>
         {/* <Partiles/> */}
       </div>
     </>
