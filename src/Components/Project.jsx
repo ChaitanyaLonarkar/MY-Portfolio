@@ -118,13 +118,12 @@ export default function Project() {
           <div id="projects" className="projects" ref={galleryContainer}>
             {/* <div className="prights" onWheel={wheel}> */}
 
-            <div className="prights">
                 <div className="pleft">
                   <h2>
                     Selected <br />
                     Works
                   </h2>
-                  <p>
+                  {/* <p>
                     I have a play a key role in developing impactful projects.
                     Here are curated selection showcasing my expertise and
                     achieved results.
@@ -134,8 +133,9 @@ export default function Project() {
                       <FaGithub />
                       Github
                     </a>
-                  </div>
+                  </div> */}
                 </div>
+            <div className="prights">
               <div id="project" className="project">
                 <div className="pimg">
                   <img src={p1} alt="" />

@@ -19,7 +19,7 @@
     color: hsl(var(--color-white)); */
   font-size: 10rem;
   color: #ffffffdb;
-  line-height: 1.1cap;
+  line-height: 1.5cap;
   text-align: center;
 
   span {
@@ -65,4 +65,10 @@
   width: 30%;
   height: 30%;
   background: conic-gradient(hsl(0, 0%, 0%), hsla(0, 0%, 100%, 0.1));
+}
+
+i{
+    background: -webkit-linear-gradient(#46beff, #031c6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

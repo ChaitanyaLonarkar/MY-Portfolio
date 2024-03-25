@@ -67,7 +67,7 @@ export default function Creative() {
             <span className={ "boldTitleLeft"} ref={boldTitleLeft}>
               Creative
             </span>
-            <span>Frontend</span>
+            <span><i>Frontend</i></span>
             <span className={" boldTitleRight"} ref={boldTitleRight}>
               Developer
             </span>

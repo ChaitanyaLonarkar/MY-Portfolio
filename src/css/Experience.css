@@ -13,7 +13,12 @@
 }
 .e-head {
   font-size: 5rem;
-  color: aqua;
+  background: -webkit-linear-gradient(#46beff, #031c6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+  font-size: 5rem;
+  /* color: aqua; */
 }
 .h2 {
   position: relative;

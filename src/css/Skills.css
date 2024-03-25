@@ -47,15 +47,19 @@
   grid-template-columns: 1fr;
   /* padding: var(--y-spacing) var(--x-spacing) 0;
    */
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
 
   gap: 6rem;
 
   overflow: hidden;
 }
 .grid .white {
-  color: aqua;
-  font-size: 4rem;
+  /* color: aqua; */
+  background: -webkit-linear-gradient(#46beff, #031c6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+  font-size: 5rem;
 }
 .sphereWrapper {
   --size: 16dvw;
