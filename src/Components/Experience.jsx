@@ -13,7 +13,7 @@ export default function Experience() {
             <div className="el">
               <div className="h2">
                 <h2>Web Developer Co-oridinator</h2>
-                {/* <h2>Web Dev</h2> */}
+                <h2>Web Dev</h2>
               </div>
 
               <div className="des">
@@ -37,7 +37,7 @@ export default function Experience() {
             <div className="el">
               <div className="h2">
                 <h2>Web Designer Intern</h2>
-                {/* <h2>Web Developer Co-oridinator</h2> */}
+                <h2>Web Developer Co-oridinator</h2>
               </div>
 
               <div className="des">Work as a Web Designer in <b>Codemate It Services Nagpur</b></div>

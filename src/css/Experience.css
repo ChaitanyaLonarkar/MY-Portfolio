@@ -21,19 +21,20 @@
   /* color: aqua; */
 }
 .h2 {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   height: 75px;
   transition: all 0.5s;
 }
 .h2:hover  {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
+  /* transform: translateY(-200px); */
   color: rgba(255, 255, 255, 0.918);
 
 }
-.h2:hover > .h2:first-child{
+/* .h2:hover > .h2:first-child{
   display: none;
-}
+} */
 .el h2 {
   font-size: 3em;
   font-weight: 400;

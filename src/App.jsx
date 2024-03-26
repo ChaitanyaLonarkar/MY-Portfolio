@@ -15,6 +15,7 @@ import Skills from "./Components/Skills";
 import Preloader from "./Components/Preloader";
 import Partiles from "./Components/Partiles";
 import { useParallax } from "react-scroll-parallax";
+import Contact from "./Components/Contact";
 
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
         <Skills />
         <Creative/>
         <Experience/>
+        <Contact/>
         {/* <Partiles/> */}
       </div>
     </>

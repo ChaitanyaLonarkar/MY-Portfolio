@@ -27,6 +27,11 @@ export default function Contact() {
             </div>
           </div>
         </div>
+        <div className="cr">
+          <div className="contact-form">
+            
+          </div>
+        </div>
       </section>
     </>
   );
