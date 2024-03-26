@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -6,14 +6,14 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export default function Contact() {
   return (
     <>
-<div className="contact">
-    <div className="cl">
-        <h2>
+      <section className="contact" id="Contact">
+        <div className="cl">
+          <h2>
             Let's <br /> Connect
-        </h2>
-        <p>Chaitanyalonarkar@gmail.com</p>
-        <div className="icons">
-        <div className="slinks">
+          </h2>
+          <p>Chaitanyalonarkar@gmail.com</p>
+          <div className="icons">
+            <div className="slinks">
               <a href="http://" target="_blank">
                 <FaLinkedin />
               </a>
@@ -25,9 +25,9 @@ export default function Contact() {
               </a>
               {/* <a href="http://" target="_blank"></a> */}
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
     </>
-  )
+  );
 }

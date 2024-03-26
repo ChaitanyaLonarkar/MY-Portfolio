@@ -4,7 +4,7 @@ import Liquid from "./Liquid";
 export default function About() {
   return (
     <>
-      <section className="about-section">
+      <section className="about-section" id="about">
         <div className="about-head">
           <p>About-</p>
           <p>-Education</p>

@@ -100,7 +100,7 @@ export default function Project() {
     <>
       {/* <section className="sectionProjects" style={{ backgroundImage: `url(${background})` }}> */}
 
-      <section className="sectionProjects">
+      <section className="sectionProjects" id="Projects">
         <div className="marq">
           <marquee
             onMouseOver={(e) => {

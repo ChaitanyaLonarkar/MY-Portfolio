@@ -13,10 +13,10 @@ export default function Navbar() {
           </div>
           <div className="links">
             <ul>
-              <li>Home</li>
-              <li> <a href="#">About</a></li>
-              <li>Contact</li>
-              <li>Projects</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Projects">Projects</a></li>
             </ul>
           </div>
           <div className="git">
