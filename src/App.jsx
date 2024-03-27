@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Creative from "./Components/Creative";
 import Experience from "./Components/Experience";
+import Footer from "./Components/Footer";
 
 
 
@@ -74,6 +75,7 @@ function App() {
         <Creative/>
         <Experience/>
         <Contact/>
+        <Footer/>
         {/* <Partiles/> */}
       </div>
     </>

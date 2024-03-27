@@ -10,6 +10,8 @@ import "./css/Project.css";
 import "./css/Creative.css";
 import "./css/Experience.css";
 import "./css/Contact.css";
+import "./css/Footer.css";
+
 
 
 

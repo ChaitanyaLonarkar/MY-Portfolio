@@ -38,9 +38,9 @@ export default function ContactForm() {
   };
   return (
     <>
-      <div classNameName="form">
+      <div className="form">
         <h2>Want to Connect ?</h2>
-        {/* <form onSubmit={sendEmail}>
+        {/* <form >
           <label>Name</label>
           <input type="text" name="user_name" />
           <label>Email</label>
@@ -51,36 +51,40 @@ export default function ContactForm() {
           {stateMessage && <p>{stateMessage}</p>}
         </form> */}
         <div className="form">
-          <form action="/" method="post">
+          <form action="/" method="post" onSubmit={sendEmail} >
             <h3 className="element">Send Message</h3>
             <input
               className="element"
               type="text"
               placeholder="Enter your name"
               required
+              name="user_name"
             />
             <input
               className="element"
               type="email"
               placeholder="Enter your email"
               required
+              name="user_email"
             />
-            <input
+            {/* <input
               className="element"
               type="text"
               placeholder="Enter your mobile"
               required
-            />
+
+            /> */}
             <textarea
               className="element"
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="5"
               placeholder="Write your message here"
               required
+              
             ></textarea>
-            <button className=" element" type="submit">
+            <button className=" element" type="submit"  disabled={isSubmitting}>
               Send
             </button>
           </form>
