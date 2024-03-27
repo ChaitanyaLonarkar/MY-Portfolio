@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import ContactForm from './ContactForm';
 
 export default function Contact() {
   return (
@@ -13,7 +14,7 @@ export default function Contact() {
           </h2>
           <p>Chaitanyalonarkar@gmail.com</p>
           <div className="icons">
-            <div className="slinks">
+            <div className="slinks clinks">
               <a href="http://" target="_blank">
                 <FaLinkedin />
               </a>
@@ -29,7 +30,7 @@ export default function Contact() {
         </div>
         <div className="cr">
           <div className="contact-form">
-            
+           <ContactForm/>
           </div>
         </div>
       </section>
