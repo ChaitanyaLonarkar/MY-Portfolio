@@ -4,6 +4,7 @@
   color: white;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   /* flex-direction: column; */
   gap: 50px;
   /* align-items: center; */
@@ -24,7 +25,7 @@
 }
 
 .about {
-  width: 30%;
+  width: 450px;
   /* padding: 25px; */
   padding-right: 3rem;
   border-right: 1px solid grey;
@@ -166,3 +167,4 @@ HiOutlineDocumentArrowDown {
     top: 271px;
   }
 }
+

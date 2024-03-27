@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    flex-wrap: wrap;
 }
 .cl{
     display: flex;
@@ -51,7 +52,8 @@ form{
 form input,textarea{
     padding: 10px ;
     background-color: transparent;
-    border: 2px solid rgb(173, 130, 255);
+    /* border: 2px solid rgb(173, 130, 255); */
+    border: 2px solid rgb(2 255 98 / 43%);
     border-radius: 5px;
     color: aliceblue;
     font-size: 16px;
@@ -60,12 +62,20 @@ form input,textarea{
     /* font-family: ; */
 }
 form button{
-    background-color: rgb(0, 255, 195);
+    background-color: rgb(2 255 98);
+    border: 1px solid rgb(2 255 98);
     width: 100px;
     padding: 9px 0px;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
 cursor: pointer;
     border-radius: 5px;
-    
+    transition: all 0.5s;
+}
+form button:hover{
+    background-color:transparent;
+    color: aliceblue;
+    border: 1px solid rgb(2 255 98);
+
 }
