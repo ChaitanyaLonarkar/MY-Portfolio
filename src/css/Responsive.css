@@ -1,50 +1,63 @@
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 }
 @media only screen and (max-width: 800px) {
-    .home {
-      flex-wrap: wrap;
-      margin: 30px 0px 0px;
-      width: 100vw;
-      padding: 0px;
-    }
-    .home .left {
-      font-size: x-large;
-      align-items: center;
-    }
-    .f {
-      width: 397px;
-      height: 69px;
-    }
-    .home img {
-      width: 250px;
-    }
-    .sectionHome {
-      /* position: fixed; */
-      left: 0em;
-    }
-    .projects{
-      flex-wrap: wrap;
-    }
-    .prights{
-      flex-wrap: wrap;
-      /* background: black; */
-    }
-    .grid{
-      padding: 0rem 2rem;
-    }
-    .grid .white{
-      font-size: 4rem;
-    }
+  .home {
+    flex-wrap: wrap;
+    margin: 74px 0px 0px;
+    width: 100vw;
+    padding: 0px;
+    scale: 0.9;
+
   }
-  
+  .home .left {
+    font-size: x-large;
+    align-items: center;
+  }
+  .logo,.git{
+    display: none;
+  }
+  .outer{
+    width: 90%;
+
+  }
+  .links ul{
+    gap: 20px;
+  }
+  .f {
+    width: 397px;
+    height: 69px;
+  }
+  .home img {
+    width: 250px;
+  }
+  .sectionHome {
+    /* position: fixed; */
+    left: 0em;
+  }
+  .projects {
+    flex-wrap: wrap;
+  }
+  .prights {
+    flex-wrap: wrap;
+    /* background: black; */
+  }
+  .grid {
+    padding: 0rem 2rem;
+  }
+  .grid .white {
+    font-size: 4rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .about-head {
     padding-left: 40px;
     font-size: 3rem;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    margin-bottom: -86px;
+
   }
-  .about-edu{
+  .about-edu {
     margin: 0px;
     gap: 0px;
   }
@@ -63,59 +76,84 @@
   .wrap {
     display: none;
   }
-  .projects{
+  .projects {
     padding: 0px;
     gap: 20px;
   }
   .pleft h2 {
     font-size: 3rem;
     padding: 2rem;
-
   }
-  marquee{
+  marquee {
     font-size: 30px;
     -webkit-text-stroke-width: 0.3px;
   }
-  .project{
+  .project {
     width: 85vw;
     overflow: hidden;
   }
-  .prights{
+  .prights {
     background: transparent;
-
   }
-  .boldTitle{
+  .boldTitle {
     font-size: 2rem;
   }
-  .experience{
-        padding: 2rem;
-
+  .experience {
+    padding: 2rem;
+    height: 100vh;
   }
-  .e-head{
-        font-size: 3.2rem;
-
+  .e-head {
+    font-size: 3.2rem;
   }
   .experience-detail {
     padding: 0;
-        margin: 20px 0px;
-
+    margin: 2.5rem 0rem;
   }
   .experience-detail .h2 {
-        font-size: 0.4rem;
+    font-size: 0.4rem;
     height: 100%;
-        margin-bottom: 10px;
-
+    margin-bottom: 10px;
   }
-  .experience-detail .des,.er {
-        font-size: 0.8rem;
-
+  .experience-detail .des,
+  .er {
+    font-size: 0.8rem;
   }
-  .line{
+  .line {
     width: 100%;
     left: 0;
   }
-/* .el{
+  /* .el{
       width: 132%;
 
 } */
+  .cl h2 {
+    font-size: 3.7rem ;
+
+  }
+  .contact .cl{
+    gap: 2rem;
+  }
+  .contact{
+    margin-bottom: 4rem;
+    /* margin: 0; */
+    gap: 0;
+  }
+  .contact .cr{
+    padding: 0rem ;
+    border: none;
+    width: 75vw;
+  }
+  .form h2{
+    font-size: 1.8rem;
+  }
+  form{
+    width: 74vw;
+  }
+ .form{
+  width: 100%;
+
+ }
+ .form h3 {
+  font-size: 1.2em;
+}
 }
