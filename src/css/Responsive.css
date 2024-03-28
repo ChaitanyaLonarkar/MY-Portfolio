@@ -87,4 +87,35 @@
   .boldTitle{
     font-size: 2rem;
   }
+  .experience{
+        padding: 2rem;
+
+  }
+  .e-head{
+        font-size: 3.2rem;
+
+  }
+  .experience-detail {
+    padding: 0;
+        margin: 20px 0px;
+
+  }
+  .experience-detail .h2 {
+        font-size: 0.4rem;
+    height: 100%;
+        margin-bottom: 10px;
+
+  }
+  .experience-detail .des,.er {
+        font-size: 0.8rem;
+
+  }
+  .line{
+    width: 100%;
+    left: 0;
+  }
+/* .el{
+      width: 132%;
+
+} */
 }
