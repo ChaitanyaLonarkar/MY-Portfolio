@@ -3,32 +3,55 @@
 @media only screen and (max-width: 800px) {
   .home {
     flex-wrap: wrap;
-    margin: 74px 0px 0px;
+    /* margin: 15px 0px 0px; */
+    margin: 10% 0% 0% 0%;
     width: 100vw;
     padding: 0px;
     scale: 0.9;
-
+    gap: 3em;
+    overflow: hidden;
   }
   .home .left {
-    font-size: x-large;
+    font-size: 21px;
     align-items: center;
+    gap: 18px;
   }
-  .logo,.git{
+  .home h3 {
+    font-size: 15px;
+  }
+  .logo,
+  .git {
     display: none;
   }
-  .outer{
+  .outer {
     width: 90%;
-
+    padding: 10px;
   }
-  .links ul{
+  .links ul {
     gap: 20px;
+    font-size: small;
   }
   .f {
-    width: 397px;
-    height: 69px;
+    width: 353px;
+    height: 50px;
+    text-align: center;
   }
   .home img {
-    width: 250px;
+    width: 220px;
+  }
+  .kbtn {
+    gap: 13px;
+    align-items: center;
+  }
+
+  .kbtn button {
+    font-size: 15px;
+    padding: 10px;
+    height: -webkit-fill-available;
+  }
+  .slinks {
+    font-size: x-large;
+    gap: 10px;
   }
   .sectionHome {
     /* position: fixed; */
@@ -55,7 +78,6 @@
     font-size: 3rem;
     /* margin-bottom: 40px; */
     margin-bottom: -86px;
-
   }
   .about-edu {
     margin: 0px;
@@ -127,33 +149,31 @@
 
 } */
   .cl h2 {
-    font-size: 3.7rem ;
-
+    font-size: 3.7rem;
   }
-  .contact .cl{
+  .contact .cl {
     gap: 2rem;
   }
-  .contact{
+  .contact {
     margin-bottom: 4rem;
     /* margin: 0; */
     gap: 0;
   }
-  .contact .cr{
-    padding: 0rem ;
+  .contact .cr {
+    padding: 0rem;
     border: none;
     width: 75vw;
   }
-  .form h2{
+  .form h2 {
     font-size: 1.8rem;
   }
-  form{
+  form {
     width: 74vw;
   }
- .form{
-  width: 100%;
-
- }
- .form h3 {
-  font-size: 1.2em;
-}
+  .form {
+    width: 100%;
+  }
+  .form h3 {
+    font-size: 1.2em;
+  }
 }

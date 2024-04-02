@@ -58,7 +58,7 @@ function App() {
 
   return (
     <>
-      <Preloader />
+      {/* <Preloader /> */}
       <Navbar />
         <Animation />
       
