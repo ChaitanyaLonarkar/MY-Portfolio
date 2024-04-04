@@ -59,7 +59,7 @@ export default function Creative() {
       <section className={ "sectionn"}>
         <div className={ "grid"}>
           <div className={ "paragraph"}>
-            I&apos;ve worked in UI design and front-end development, so I can
+            I&apos;ve worked in web designs and front-end development, so I can
             understand designs well and builds effective communication between
             team members.
           </div>
@@ -73,9 +73,8 @@ export default function Creative() {
             </span>
           </h2>
           <div className="paragraph paragraphAlt" >
-            Currently, I live in Seattle. In my personal life, I love to travel
-            with my backpack, watch documentaries about geography, and explore
-            new traditional music.
+            Currently, I live in Gondia(MH). In my personal life, I love to code
+            , exploring different technologies 
           </div>
 
           {/* <Blobs type={"v3"} /> */}

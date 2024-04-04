@@ -10,19 +10,19 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [count, setCount] = useState(0);
-  const parallax = useParallax({
-    // rotate: [0, 360],
-    scale: [1.1, 0.7, "easeInQuad"],
+  // const parallax = useParallax({
+  //   // rotate: [0, 360],
+  //   scale: [1.1, 0.7, "easeInQuad"],
     
-    // translateY: [ 0,20 ],
-    // display: ["flex","none","easeInQuad"]
-  });
+  //   // translateY: [ 0,20 ],
+  //   // display: ["flex","none","easeInQuad"]
+  // });
 
   
 
   return (
     <>
-      <section className="home" ref={parallax.ref} >
+      <section className="home"  >
          <div className="left-img">
           <img src={myimg} alt="Chaitanya" />
         </div>

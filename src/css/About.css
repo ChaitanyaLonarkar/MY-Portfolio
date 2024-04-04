@@ -10,15 +10,15 @@
   /* align-items: center; */
   /* padding: 109px; */
   margin: 4rem 0rem 5rem;
-  position: relative;
-  z-index: 2;
+  /* position: relative;
+  z-index: 2; */
 }
 .about-section{
-  height: 100vh;
+  /* height: 100vh; */
   margin-bottom: 7rem;
 }
 .about-edu h1 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 2.3rem;
   font-variant-caps: petite-caps;
 
@@ -28,19 +28,22 @@
   width: 450px;
   /* padding: 25px; */
   padding-right: 3rem;
-  border-right: 1px solid grey;
+  border-right: 1px solid #ffffff2b;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: space-between;
 }
 .edu {
-  border-bottom: 1px solid gray;
-  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.399);
+  padding-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 .edu p{
   font-size: 14px;
-    color: #74afaf;
+  color: #90b6fb;
 }
 .edu-year {
   display: flex;
@@ -49,23 +52,25 @@
   align-items: center;
 }
 .edu-year h2{
-  font-weight: 500;
+  font-weight: 300;
+
 
 }
 .education {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 .about-head {
-  font-size: 3.7rem;
+  font-size: 4.3rem;
   color: aliceblue;
   font-weight: 300;
   /* margin: 50px; */
   /* padding: 50px; */
   padding-left: 100px;
   padding-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+  margin: 0;
 }
 HiOutlineDocumentArrowDown {
   font-size: x-large;
@@ -96,6 +101,10 @@ HiOutlineDocumentArrowDown {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
+}
+.about-edu .about p{
+  line-height: 2.5rem;
+  color: #92b9ff;
 }
 .poly {
   z-index: 10;

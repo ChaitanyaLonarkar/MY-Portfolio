@@ -108,7 +108,7 @@ html {
 
 /* home section */
 #sectionHome {
-  height: 100vh;
+  height: 80vh;
 }
 .hidden {
   display: hidden;
@@ -415,8 +415,8 @@ html {
 } */
 
 .Allsection {
-  position: relative;
-  top: 90vh;
+  /* position: relative;
+  top: 90vh; */
   /* scale: 0.95; */
   /* background: hsl(var(--color-bg-alt)); */
   /* background: rgb(0, 19, 30);

@@ -50,7 +50,7 @@ export default function About() {
             </div>
           </div>
         </div>
-
+{/* 
         <div className="wrap w1 ">
           <div className="poly"></div>
         <Liquid/>
@@ -64,7 +64,7 @@ export default function About() {
         <div className="wrap w3">
           <div className="poly"></div>
         <Liquid/>
-        </div>
+        </div> */}
       </section>
     </>
   );

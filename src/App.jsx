@@ -25,20 +25,20 @@ function App() {
   const [hideHomePage, setHideHomePage] = useState(false);
 
   // useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= window.innerHeight) {
-        setHideHomePage(true);
-        // console.log("chaitanya")
-        // const home=document.getElementById("Allsection")
-        // home.style.scale="1"
-      } else {
-        setHideHomePage(false);
-        // console.log("no")
+    // const handleScroll = () => {
+    //   if (window.scrollY >= window.innerHeight) {
+    //     setHideHomePage(true);
+    //     // console.log("chaitanya")
+    //     // const home=document.getElementById("Allsection")
+    //     // home.style.scale="1"
+    //   } else {
+    //     setHideHomePage(false);
+    //     // console.log("no")
 
-      }
-    };
+    //   }
+    // };
 
-    window.addEventListener('scroll', handleScroll);
+    // window.addEventListener('scroll', handleScroll);
 
     // return () => {
     //   window.removeEventListener('scroll', handleScroll);
@@ -62,17 +62,19 @@ function App() {
       <Navbar />
         <Animation />
       
-        {hideHomePage?"":<div id="sectionHome" ><Home /></div>}
+        {/* {hideHomePage?"":<div id="sectionHome" ><Home /></div>} */}
+        <div id="sectionHome" ><Home /></div>
+
         
       
       {/* <div className="Allsection" ref={parallax.ref}> */}
       <div  id="Allsection"className="Allsection" >/
 
         {/* <Partiles/> */}
+        <Creative/>
         <About/>
         <Project />
         <Skills />
-        <Creative/>
         <Experience/>
         <Contact/>
         <Footer/>
