@@ -8,10 +8,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import p1 from "../assets/img/p1.png";
 import { SiQuicklook } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
+import { AllProjects } from "../Json/projects";
 
 export default function Project() {
   const galleryContainer = useRef();
   const bg = useRef();
+
+  const p=AllProjects.map((project,k)=>{
+    console.log(project.description)
+  })
   // const container = useRef();
   // const { contextSafe } = useGSAP({scope: container});
 
@@ -125,19 +130,68 @@ export default function Project() {
                 Selected <br />
                 Works
               </h2>
-              {/* <p>
-                    I have a play a key role in developing impactful projects.
-                    Here are curated selection showcasing my expertise and
-                    achieved results.
-                  </p>
-                  <div className="git">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                      <FaGithub />
-                      Github
-                    </a>
-                  </div> */}
+              
             </div>
             <div className="prights">
+              {AllProjects.map((project, index) => (
+                <div id="project" className="project" key={index}>
+                  <div className="pimg">
+                    <img src={project.image} alt={project.title} />
+                  </div>
+                  <div className="desc">
+                    <h3 className="p-name">{project.title}</h3>
+                    <div className="p-description">
+                      {project.description}
+                    </div>
+                    <div className="techstack">
+                      <div className="thead">
+                        <b>Tech Stack :</b>
+                      </div>
+                      <div className="stack">{project.tech}</div>
+                    </div>
+                    <div className="live">
+                      <a href={project.live}>
+                        <SiQuicklook className="live-icon" />
+                        Preview
+                      </a>
+                      <a href={project.code}>
+                        <FaCode className="live-icon" />
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+              {/* <div id="project" className="project">
+                <div className="pimg">
+                  <img src={p1} alt="" />
+                </div>
+                <div className="desc">
+                  <h3 className="p-name">NEtflix clone</h3>
+                  <div className="p-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptatem corporis sed dolore voluptatibus, expedita sequi
+                    nostrum facilis illo necessitatibus voluptatum inventore
+                    soluta in aperiam. In sit unde maiores! Debitis, quae.
+                  </div>
+                  <div className="techstack">
+                    <div className="thead">
+                      <b>Tech Stack :</b>
+                    </div>
+                    <div className="stack">html css js</div>
+                  </div>
+                  <div className="live">
+                    <a href="//">
+                      <SiQuicklook className="live-icon" />
+                      Preview
+                    </a>
+                    <a href="//">
+                      <FaCode className="live-icon" />
+                      Code
+                    </a>
+                  </div>
+                </div>
+              </div>
               <div id="project" className="project">
                 <div className="pimg">
                   <img src={p1} alt="" />
@@ -158,7 +212,7 @@ export default function Project() {
                   </div>
                   <div className="live">
                     <a href="//">
-                      <SiQuicklook  className="live-icon"/>
+                      <SiQuicklook className="live-icon" />
                       Preview
                     </a>
                     <a href="//">
@@ -222,36 +276,6 @@ export default function Project() {
                       Preview
                     </a>
                     <a href="//">
-                      <FaCode  className="live-icon" />
-                      Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div id="project" className="project">
-                <div className="pimg">
-                  <img src={p1} alt="" />
-                </div>
-                <div className="desc">
-                  <h3 className="p-name">NEtflix clone</h3>
-                  <div className="p-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptatem corporis sed dolore voluptatibus, expedita sequi
-                    nostrum facilis illo necessitatibus voluptatum inventore
-                    soluta in aperiam. In sit unde maiores! Debitis, quae.
-                  </div>
-                  <div className="techstack">
-                    <div className="thead">
-                      <b>Tech Stack :</b>
-                    </div>
-                    <div className="stack">html css js</div>
-                  </div>
-                  <div className="live">
-                    <a href="//">
-                      <SiQuicklook className="live-icon" />
-                      Preview
-                    </a>
-                    <a href="//">
                       <FaCode className="live-icon" />
                       Code
                     </a>
@@ -287,7 +311,7 @@ export default function Project() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

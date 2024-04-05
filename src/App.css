@@ -85,7 +85,7 @@ html {
   list-style: none;
   gap: 47px;
 }
-.links li a, .git a {
+.links li a, .git a , .kbtn a {
   color: aliceblue;
   text-decoration: none;
   cursor: pointer;
@@ -162,10 +162,10 @@ html {
   background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%);
   transition: all 0.5s;
 }
-.home .kbtn button:hover {
+/* .home .kbtn button:hover {
   color: #dbffb7;
   background: #091a05;
-}
+} */
 .kbtn {
   display: flex;
   /* justify-content: space-between; */

@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="kbtn">
             {/* <button>Know Me</button> */}
-            <button>Get to Know Me</button>
+            <button><a href="#Allsection">Get to Know Me</a></button>
             <div className="slinks">
               <a href="http://" target="_blank">
                 <FaLinkedin />

@@ -14,54 +14,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Skills() {
-  // const parallax =
-  //   useParallax <
-  //   HTMLDivElement >
-  //   {
-  //     rotate: [0, 360],
-  //   };
-  // return (
-  //   <>
-  //     <section>
-  //       <div className="skill">Java</div>
-  //       <div ref={parallax.ref} className="spinner">
-  //         😵‍💫
-  //         <div className="diamond">💎</div>
-  //         <div className="clown">🤡</div>
-  //         <div className="money">💰</div>
-  //         <div className="hand">👌🏻</div>
-  //       </div>
-  //     </section>
-  //   </>
-  // );
-  // const [angle, setAngle] = useState(0);
 
-  // const handleMouseDown = (event) => {
-  //   const container = document.getElementById("dragger-container");
-  //   const containerWidth = container.offsetWidth;
-  //   const containerHeight = container.offsetHeight;
-  //   const centerX = containerWidth / 2;
-  //   const centerY = containerHeight / 2;
-  //   const radius = Math.min(centerX, centerY);
-  //   const dx = event.clientX - centerX;
-  //   const dy = event.clientY - centerY;
-  //   const initialAngle = Math.atan2(dy, dx) * (180 / Math.PI);
-
-  //   const handleMouseMove = (event) => {
-  //     const dx = event.clientX - centerX;
-  //     const dy = event.clientY - centerY;
-  //     const newAngle = Math.atan2(dy, dx) * (180 / Math.PI);
-  //     setAngle(initialAngle - newAngle);
-  //   };
-
-  //   const handleMouseUp = () => {
-  //     document.removeEventListener("mousemove", handleMouseMove);
-  //     document.removeEventListener("mouseup", handleMouseUp);
-  //   };
-
-  //   document.addEventListener("mousemove", handleMouseMove);
-  //   document.addEventListener("mouseup", handleMouseUp);
-  // };
   gsap.registerPlugin(Draggable, MotionPathPlugin, ScrollTrigger);
 
   const container = useRef();
@@ -123,15 +76,15 @@ export default function Skills() {
         },
       });
 
-      const sphereTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: container.current,
-          start: "top 25%",
-          end: "bottom 75%",
-          scrub: true,
-          toggleActions: "play none none reverse",
-        },
-      });
+      // const sphereTL = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: container.current,
+      //     start: "top 25%",
+      //     end: "bottom 75%",
+      //     scrub: true,
+      //     toggleActions: "play none none reverse",
+      //   },
+      // });
       // sphereTL.from(sphere.current, {
       //   yPercent: -200,
       // });
