@@ -3,7 +3,7 @@
 // import { useState, useEffect } from "react";
 
 import React, { useRef, useState } from "react";
-import Skill from "./Skills.json";
+import {Skill} from "../Json/skills";
 // import styles from './SkillSet.module.scss';
 
 import gsap from "gsap";
@@ -151,7 +151,7 @@ export default function Skills() {
             <span>My</span> <br /> Skillset
           </div>
           <div className={"circularCarouselWrapper"}>
-            <div className={"collisionDiv"} ref={collisionDiv}></div>
+            {/* <div className={"collisionDiv"} ref={collisionDiv}></div> */}
             <div className={"circularCarousel"}>
               <svg viewBox="0 0 400 400">
                 <path
@@ -175,10 +175,11 @@ export default function Skills() {
                     height={100}
                     loading={"lazy"}
                   />
+                  {/* <p style={{color:"black" , fontWeight:"600"}}>{skill.title}</p> */}
                 </div>
               ))}
             </div>
-            {Skill.map((skill, index) => (
+            {/* {Skill.map((skill, index) => (
               <div
                 key={index}
                 className={`circularDescriptions ${
@@ -190,7 +191,7 @@ export default function Skills() {
                 </h2>
                 <p className={"description"}>{skill.description}</p>
               </div>
-            ))}
+            ))} */}
 
             <div className={"dragMe"}>
               <svg

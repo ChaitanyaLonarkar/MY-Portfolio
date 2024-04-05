@@ -16,6 +16,7 @@ import Partiles from "./Components/Partiles";
 import { useParallax } from "react-scroll-parallax";
 import Contact from "./Components/Contact";
 import Snow from "./Components/Snow";
+import  { Toaster } from 'react-hot-toast';
 
 function App() {
   const [hideHomePage, setHideHomePage] = useState(false);
@@ -73,6 +74,8 @@ function App() {
         <Experience />
         <Contact />
         <Footer />
+        <Toaster />
+
         {/* <Partiles/> */}
       </div>
     </>
