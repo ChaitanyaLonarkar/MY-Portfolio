@@ -108,7 +108,8 @@ html {
 
 /* home section */
 #sectionHome {
-  height: 80vh;
+  /* height: 80vh; */
+  margin-bottom: 8rem;
 }
 .hidden {
   display: hidden;

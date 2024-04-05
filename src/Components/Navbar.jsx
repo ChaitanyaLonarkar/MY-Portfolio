@@ -20,7 +20,7 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="git">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ChaitanyaLonarkar" target="_blank" >
               <FaGithub />
               Github
             </a>

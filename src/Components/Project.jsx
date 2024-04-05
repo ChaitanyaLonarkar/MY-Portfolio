@@ -6,6 +6,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import p1 from "../assets/img/p1.png";
+import { SiQuicklook } from "react-icons/si";
+import { FaCode } from "react-icons/fa";
 
 export default function Project() {
   const galleryContainer = useRef();
@@ -118,12 +120,12 @@ export default function Project() {
           <div id="projects" className="projects" ref={galleryContainer}>
             {/* <div className="prights" onWheel={wheel}> */}
 
-                <div className="pleft">
-                  <h2>
-                    Selected <br />
-                    Works
-                  </h2>
-                  {/* <p>
+            <div className="pleft">
+              <h2>
+                Selected <br />
+                Works
+              </h2>
+              {/* <p>
                     I have a play a key role in developing impactful projects.
                     Here are curated selection showcasing my expertise and
                     achieved results.
@@ -134,15 +136,15 @@ export default function Project() {
                       Github
                     </a>
                   </div> */}
-                </div>
+            </div>
             <div className="prights">
               <div id="project" className="project">
                 <div className="pimg">
                   <img src={p1} alt="" />
                 </div>
                 <div className="desc">
-                  <h3 className="title">NEtflix clone</h3>
-                  <div className="description">
+                  <h3 className="p-name">NEtflix clone</h3>
+                  <div className="p-description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Voluptatem corporis sed dolore voluptatibus, expedita sequi
                     nostrum facilis illo necessitatibus voluptatum inventore
@@ -150,13 +152,19 @@ export default function Project() {
                   </div>
                   <div className="techstack">
                     <div className="thead">
-                      <b>Technical Stack :</b>
+                      <b>Tech Stack :</b>
                     </div>
                     <div className="stack">html css js</div>
                   </div>
                   <div className="live">
-                    <a href="//">Preview</a>
-                    <a href="//">Code</a>
+                    <a href="//">
+                      <SiQuicklook  className="live-icon"/>
+                      Preview
+                    </a>
+                    <a href="//">
+                      <FaCode className="live-icon" />
+                      Code
+                    </a>
                   </div>
                 </div>
               </div>
@@ -165,8 +173,8 @@ export default function Project() {
                   <img src={p1} alt="" />
                 </div>
                 <div className="desc">
-                  <h3 className="title">NEtflix clone</h3>
-                  <div className="description">
+                  <h3 className="p-name">NEtflix clone</h3>
+                  <div className="p-description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Voluptatem corporis sed dolore voluptatibus, expedita sequi
                     nostrum facilis illo necessitatibus voluptatum inventore
@@ -174,13 +182,19 @@ export default function Project() {
                   </div>
                   <div className="techstack">
                     <div className="thead">
-                      <b>Technical Stack :</b>
+                      <b>Tech Stack :</b>
                     </div>
                     <div className="stack">html css js</div>
                   </div>
                   <div className="live">
-                    <a href="//">Preview</a>
-                    <a href="//">Code</a>
+                    <a href="//">
+                      <SiQuicklook className="live-icon" />
+                      Preview
+                    </a>
+                    <a href="//">
+                      <FaCode className="live-icon" />
+                      Code
+                    </a>
                   </div>
                 </div>
               </div>
@@ -189,8 +203,8 @@ export default function Project() {
                   <img src={p1} alt="" />
                 </div>
                 <div className="desc">
-                  <h3 className="title">NEtflix clone</h3>
-                  <div className="description">
+                  <h3 className="p-name">NEtflix clone</h3>
+                  <div className="p-description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Voluptatem corporis sed dolore voluptatibus, expedita sequi
                     nostrum facilis illo necessitatibus voluptatum inventore
@@ -198,13 +212,19 @@ export default function Project() {
                   </div>
                   <div className="techstack">
                     <div className="thead">
-                      <b>Technical Stack :</b>
+                      <b>Tech Stack :</b>
                     </div>
                     <div className="stack">html css js</div>
                   </div>
                   <div className="live">
-                    <a href="//">Preview</a>
-                    <a href="//">Code</a>
+                    <a href="//">
+                      <SiQuicklook className="live-icon" />
+                      Preview
+                    </a>
+                    <a href="//">
+                      <FaCode  className="live-icon" />
+                      Code
+                    </a>
                   </div>
                 </div>
               </div>
@@ -213,8 +233,8 @@ export default function Project() {
                   <img src={p1} alt="" />
                 </div>
                 <div className="desc">
-                  <h3 className="title">NEtflix clone</h3>
-                  <div className="description">
+                  <h3 className="p-name">NEtflix clone</h3>
+                  <div className="p-description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Voluptatem corporis sed dolore voluptatibus, expedita sequi
                     nostrum facilis illo necessitatibus voluptatum inventore
@@ -222,13 +242,19 @@ export default function Project() {
                   </div>
                   <div className="techstack">
                     <div className="thead">
-                      <b>Technical Stack :</b>
+                      <b>Tech Stack :</b>
                     </div>
                     <div className="stack">html css js</div>
                   </div>
                   <div className="live">
-                    <a href="//">Preview</a>
-                    <a href="//">Code</a>
+                    <a href="//">
+                      <SiQuicklook className="live-icon" />
+                      Preview
+                    </a>
+                    <a href="//">
+                      <FaCode className="live-icon" />
+                      Code
+                    </a>
                   </div>
                 </div>
               </div>
@@ -237,8 +263,8 @@ export default function Project() {
                   <img src={p1} alt="" />
                 </div>
                 <div className="desc">
-                  <h3 className="title">NEtflix clone</h3>
-                  <div className="description">
+                  <h3 className="p-name">NEtflix clone</h3>
+                  <div className="p-description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Voluptatem corporis sed dolore voluptatibus, expedita sequi
                     nostrum facilis illo necessitatibus voluptatum inventore
@@ -246,13 +272,19 @@ export default function Project() {
                   </div>
                   <div className="techstack">
                     <div className="thead">
-                      <b>Technical Stack :</b>
+                      <b>Tech Stack :</b>
                     </div>
                     <div className="stack">html css js</div>
                   </div>
                   <div className="live">
-                    <a href="//">Preview</a>
-                    <a href="//">Code</a>
+                    <a href="//">
+                      <SiQuicklook className="live-icon" />
+                      Preview
+                    </a>
+                    <a href="//">
+                      <FaCode className="live-icon" />
+                      Code
+                    </a>
                   </div>
                 </div>
               </div>

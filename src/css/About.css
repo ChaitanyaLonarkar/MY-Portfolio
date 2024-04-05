@@ -15,13 +15,13 @@
 }
 .about-section{
   /* height: 100vh; */
-  margin-bottom: 7rem;
+  margin-bottom: 9rem;
 }
 .about-edu h1 {
   font-weight: 500;
   font-size: 2.3rem;
   font-variant-caps: petite-caps;
-
+  color: #3dff6c;
 }
 
 .about {
@@ -96,6 +96,8 @@ HiOutlineDocumentArrowDown {
   background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%);
   color: aliceblue;
 }
+
+
 .about-head p {
   background: -webkit-linear-gradient(#46beff, #031c6b);
   -webkit-background-clip: text;

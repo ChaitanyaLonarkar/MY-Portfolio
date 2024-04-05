@@ -1,12 +1,13 @@
 .contact{
     color: aliceblue;
-    height: 100vh;
+    /* height: 100vh; */
     /* margin: 6rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
     flex-wrap: wrap;
+    padding: 7rem 0rem;
 }
 .cl{
     display: flex;

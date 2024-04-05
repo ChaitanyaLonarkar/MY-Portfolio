@@ -73,8 +73,7 @@ export default function Creative() {
             </span>
           </h2>
           <div className="paragraph paragraphAlt" >
-            Currently, I live in Gondia(MH). In my personal life, I love to code
-            , exploring different technologies 
+            Currently, I live in Gondia(MH). In my personal life, I love to solve coding problems, exploring different technologies and passionate about Artificial Intelligence and Machine Learning.
           </div>
 
           {/* <Blobs type={"v3"} /> */}

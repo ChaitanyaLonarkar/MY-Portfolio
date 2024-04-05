@@ -11,10 +11,13 @@
     gap: 3em;
     overflow: hidden;
   }
+  .home h1 {
+    margin: 0;
+  }
   .home .left {
     font-size: 21px;
     align-items: center;
-    gap: 18px;
+    gap: 15px;
   }
   .home h3 {
     font-size: 15px;
@@ -25,11 +28,13 @@
   }
   .outer {
     width: 90%;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 4px;
   }
   .links ul {
     gap: 20px;
     font-size: small;
+    padding: 0;
   }
   .f {
     width: 353px;
@@ -37,7 +42,9 @@
     text-align: center;
   }
   .home img {
-    width: 220px;
+    /* width: 220px; */
+    width: 190px;
+    border-radius: 10px 56px;
   }
   .kbtn {
     gap: 13px;
@@ -64,29 +71,60 @@
     flex-wrap: wrap;
     /* background: black; */
   }
-  .grid {
-    padding: 0rem 2rem;
+  .section .grid {
+    padding: 2rem;
+    gap: 8rem;
   }
-  .grid .white {
+  .section .grid .white {
     font-size: 4rem;
+  }
+  .section {
+    padding: 4rem 0rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-
   #sectionHome {
-    height: 100vh;
-}
+    /* height: 80vh; */
+    margin-bottom: 20%;
+  }
+  .circles {
+    height: 114%;
+    filter: blur(1px);
+  }
+  .about-section {
+    /* height: 100vh; */
+    margin-bottom: 6rem;
+  }
   .about-head {
     padding-left: 40px;
     font-size: 3rem;
     /* margin-bottom: 40px; */
-    margin-bottom: 46px;
+    margin-bottom: 10px;
   }
+  .about-head p {
+    margin: 0;
+  }
+
+  .about-edu .about p {
+    line-height: 1.8rem;
+  }
+
   .about-edu {
     margin: 0px;
     gap: 0px;
   }
+  .about-edu h1 {
+    margin: 0;
+  }
+
+  .about-edu a {
+    /* background: white; */
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    width: 11rem;
+  }
+
   .about {
     border-right: 0px;
     padding-right: 0rem;
@@ -95,9 +133,14 @@
   .education {
     padding: 2rem;
     font-size: x-small;
+    gap: 1rem;
   }
+
   .edu-year {
     gap: 0px;
+  }
+  .edu p {
+    margin: 0;
   }
   .wrap {
     display: none;
@@ -115,25 +158,34 @@
     -webkit-text-stroke-width: 0.3px;
   }
   .project {
-    width: 85vw;
+    width: 87vw;
     overflow: hidden;
+  }
+  .projects a {
+    padding: 0.4rem;
+    /* width: 5rem; */
   }
   .prights {
     background: transparent;
   }
-  .boldTitle {
-    font-size: 2rem;
+  .desc {
+    gap: 15px;
+    padding: 0px 12px 20px;
   }
+ 
   .experience {
-    padding: 2rem;
-    height: 100vh;
+    padding: 1rem;
+    width: 86vw;
+    gap: 1rem;
+    /* height: 100vh; */
   }
   .e-head {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
+  
   .experience-detail {
     padding: 0;
-    margin: 2.5rem 0rem;
+    margin: 2rem 0rem;
   }
   .experience-detail .h2 {
     font-size: 0.4rem;
@@ -154,30 +206,61 @@
 } */
   .cl h2 {
     font-size: 3.7rem;
+    margin: 0;
   }
   .contact .cl {
-    gap: 2rem;
+    gap: 1rem;
   }
   .contact {
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
     /* margin: 0; */
-    gap: 0;
+    gap: 4rem;
   }
   .contact .cr {
     padding: 0rem;
     border: none;
-    width: 75vw;
+    /* width: 75vw; */
   }
   .form h2 {
     font-size: 1.8rem;
   }
   form {
-    width: 74vw;
-  }
-  .form {
+    /* width: 80vw; */
     width: 100%;
   }
+  /* .form {
+  } */
   .form h3 {
     font-size: 1.2em;
   }
+  .info {
+    gap: 10px;
+    margin: 2rem 0rem 2rem;
+  }
+  .info p{
+    margin: 0;
+    font-size: smaller;
+
+  }
+
+  /* creative frontend */
+  .sectionn .grid {
+    gap: 4rem;
+  }
+
+  .paragraph{
+    font-size: medium;
+    margin: 0;
+    padding: 1.5rem;
+
+  }
+
+  .boldTitle {
+    font-size: 2.4rem;
+  }
+  .boldTitle i {
+    text-shadow: -5px 4px #00ff3e;
+  }
+  
+
 }
