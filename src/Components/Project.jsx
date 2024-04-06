@@ -1,11 +1,9 @@
 import { useEffect } from "react";
-import background from "../assets/img/background.jpg";
 import { FaGithub } from "react-icons/fa6";
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import p1 from "../assets/img/p1.png";
 import { SiQuicklook } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import { AllProjects } from "../Json/projects";

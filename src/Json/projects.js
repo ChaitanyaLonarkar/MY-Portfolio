@@ -1,6 +1,16 @@
+
+import movieimg from "../assets/img/MovieApp.png"
+import weatherapp from "../assets/img/weatherapp.jpg"
+import Paper from "../assets/img/Paper.png"
+import netflixhomepage from "../assets/img/netflix-homepage.jpg"
+import folio from "../assets/img/folio.png"
+import Edu2 from "../assets/img/Edu2.jpg"
+import game from "../assets/img/game.jpg"
+import converter from "../assets/img/converter.png"
+
 export const AllProjects = [
   {
-    image: "./src/assets/img/ProjectsImg/MovieApp.png",
+    image: movieimg,
     
     title: "Movie Application",
     tech: "ReactJS, CSS, movieAPI",
@@ -13,7 +23,7 @@ export const AllProjects = [
     code: "https://github.com/ChaitanyaLonarkar/Movie_app",
   },
     {
-      image: "./src/assets/img/ProjectsImg/weatherapp.jpg",
+      image: weatherapp,
   
       title: "Weather Application",
       tech: "ReactJS, CSS, WeatherAPI",
@@ -23,7 +33,7 @@ export const AllProjects = [
       code: "https://github.com/ChaitanyaLonarkar/Weather-app",
     },
   {
-    image: "/src/assets/img/ProjectsImg/Paper.png",
+    image: Paper ,
 
     title: "Paper Portfolio Clone",
     tech: "ReactJS, CSS, JS",
@@ -33,7 +43,7 @@ export const AllProjects = [
     code: "https://github.com/ChaitanyaLonarkar/paper-portfolio",
   },
   {
-    image: "/src/assets/img/ProjectsImg/netflix-homepage.jpg",
+    image: netflixhomepage,
 
     title: "Netflix UI Clone",
     tech: "HTML, CSS, JS",
@@ -43,7 +53,7 @@ export const AllProjects = [
     code: "https://github.com/ChaitanyaLonarkar/netflix-clone",
   },
   {
-    image: "/src/assets/img/ProjectsImg/folio.png",
+    image: folio,
 
     title: "My Portfolio",
     tech: "HTML, CSS, JS",
@@ -53,7 +63,7 @@ export const AllProjects = [
     code: "https://github.com/ChaitanyaLonarkar/chaitanya-portfolio",
   },
   {
-    image: "/src/assets/img/ProjectsImg/Edu2.jpg",
+    image: Edu2,
 
     title: "Educational Website",
     tech: "HTML, CSS, JS",
@@ -63,7 +73,7 @@ export const AllProjects = [
     code: "https://github.com/ChaitanyaLonarkar/Educational-site",
   },
   {
-    image: "/src/assets/img/ProjectsImg/game.jpg",
+    image: game,
 
     title: "Bubble Bash Game",
     tech: "HTML, CSS, JS",
@@ -73,7 +83,7 @@ export const AllProjects = [
     code: "https://github.com/ChaitanyaLonarkar/Bubble-Blash-Game",
   },
   {
-    image: "/src/assets/img/ProjectsImg/converter.png",
+    image: converter,
 
     title: "Weight Converter",
     tech: "HTML, CSS, JS",

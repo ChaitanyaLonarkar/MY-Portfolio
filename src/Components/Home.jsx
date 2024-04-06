@@ -1,6 +1,5 @@
 import React from "react";
-import myimg from "../assets/img/imgCcc.jpg";
-import myimg2 from "../assets/img/bimg.jpg";
+import myimg from "../assets/img/meriIMG.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
