@@ -22,169 +22,256 @@
 
   .home img {
     width: 272px;
-}
-.home h1 {
-  margin: 0;
-}
-.home .left {
-  font-size: 28px;
-  align-items: center;
-  gap: 15px;
-}
-.f {
-  width: 444px;
-  height: 80px;
-  text-align: center;
-}
-.paragraph {
-  
-  margin: 3rem;
-}
-.boldTitle {
-  font-size: 3.5rem;
-  padding: 0rem 5rem;
-}
-.boldTitle i {
-  text-shadow: -6px 5px #00ff3e;
-}
-
-
-.about-section {
-  /* height: 100vh; */
-  margin-bottom: 6rem;
-}
-.about-head {
-  padding-left: 89px;
-  font-size: 3.6rem;
-  margin-bottom: 40px;
-}
-.about-head p {
-  margin: 0;
-}
-
-.about-edu .about p {
-  line-height: -0.7rem;
-}
-
-.about-edu {
-  margin: 0px;
-  /* gap: 0px; */
-}
-.about-edu h1 {
-  margin: 0;
-}
-
-.about-edu a {
-  /* background: white; */
-  padding: 0.7rem;
-  border-radius: 0.3rem;
-  width: 11rem;
-}
-
-.about {
-  border-right: 0px;
-  padding-right: 0rem;
-  padding: 2rem;
-}
-.education {
-  padding: 2rem;
-  font-size: small;
-  /* gap: 1rem; */
-}
-
-.edu-year {
-  gap: 0px;
-}
-.edu p {
-  margin: 0;
-}
-.wrap {
-  display: none;
-}
-.projects {
-  padding: 0px;
-  gap: 20px;
-}
-.project{
-  width: 80%;
-}
-.pleft h2 {
-  font-size: 4rem;
-  padding: 4rem;
-}
-.marquee {
-  font-size: 47px;
-  -webkit-text-stroke-width: 0.7px;
-}
-.desc{
-  gap: 32px;
-    padding: 35px;
-}
-.pimg img {
-  /* width: 28.7em; */
-  width: 100%;
-}
-
-.grid .white{
-  font-size: 4.5rem;
-}
-.sphereWrapper {
-  left: calc(50% - var(--size) / 2.9);
-  top: 51%;}
-
-
-  .experience
-    {
-      padding: 2rem;
   }
-  .e-head{
+  .home h1 {
+    margin: 0;
+  }
+  .home .left {
+    font-size: 28px;
+    align-items: center;
+    gap: 15px;
+  }
+  .f {
+    width: 444px;
+    height: 80px;
+    text-align: center;
+  }
+  .paragraph {
+    margin: 3rem;
+  }
+  .boldTitle {
+    font-size: 3.5rem;
+    padding: 0rem 5rem;
+  }
+  .boldTitle i {
+    text-shadow: -6px 5px #00ff3e;
+  }
+
+  .about-section {
+    /* height: 100vh; */
+    margin-bottom: 6rem;
+  }
+  .about-head {
+    padding-left: 89px;
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+  }
+  .about-head p {
+    margin: 0;
+  }
+
+  .about-edu .about p {
+    line-height: -0.7rem;
+  }
+
+  .about-edu {
+    margin: 0px;
+    /* gap: 0px; */
+  }
+  .about-edu h1 {
+    margin: 0;
+  }
+
+  .about-edu a {
+    /* background: white; */
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    width: 11rem;
+  }
+
+  .about {
+    border-right: 0px;
+    padding-right: 0rem;
+    padding: 2rem;
+  }
+  .education {
+    padding: 2rem;
+    font-size: small;
+    /* gap: 1rem; */
+  }
+
+  .edu-year {
+    gap: 0px;
+  }
+  .edu p {
+    margin: 0;
+  }
+  .wrap {
+    display: none;
+  }
+  .projects {
+    padding: 0px;
+    gap: 20px;
+  }
+  .project {
+    width: 80%;
+  }
+  .pleft h2 {
+    font-size: 4rem;
+    padding: 4rem;
+  }
+  .marquee {
+    font-size: 47px;
+    -webkit-text-stroke-width: 0.7px;
+  }
+  .desc {
+    gap: 32px;
+    padding: 35px;
+  }
+  .pimg img {
+    /* width: 28.7em; */
+    width: 100%;
+  }
+
+  .grid .white {
+    font-size: 4.5rem;
+  }
+  .sphereWrapper {
+    left: calc(50% - var(--size) / 2.9);
+    top: 51%;
+  }
+
+  .experience {
+    padding: 2rem;
+  }
+  .e-head {
     font-size: 4rem;
     padding-left: 3rem;
   }
 
-.experience-detail {
-  padding: 1.2rem;
-}
-.el{
-  display: flex;
-  flex-direction: column;
-  gap: 29px;
-}
-.el h2 {
-  font-size: 1.5em;
-  /* margin: 0; */
-  height: 15px;
+  .experience-detail {
+    padding: 1.2rem;
+  }
+  .el {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+  .el h2 {
+    font-size: 1.5em;
+    /* margin: 0; */
+    height: 15px;
+  }
+
+  .cl h2 {
+    font-size: 4rem;
+  }
+  .cr {
+    padding-left: 0rem;
+    border-left: 0px solid #8080803b;
+  }
+  .contact {
+    padding: 4rem;
+    /* justify-content: flex-start; */
+  }
+
+  form {
+    width: 100%;
+  }
+  .circles {
+    width: 91%;
+  }
 }
 
-.cl h2{
-  font-size: 4rem;
-}
-.cr {
-  padding-left: 0rem;
-  border-left: 0px solid #8080803b;
-}
-.contact {
-  padding: 4rem;
-  /* justify-content: flex-start; */
-}
-
-form{
-  width: 100%;
-}
-.circles{
-  width: 91%;
-}
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1124px) {
   .outer {
-    width: 90%;
-    padding: 4px;
+    width: 85%;
+    padding: 10px;
   }
   .links ul {
     gap: 20px;
-    font-size: small;
+    font-size: medium;
     padding: 9px 0;
+  }
+
+  .circles {
+    width: 95%;
+  }
+  .home {
+    gap: 3em;
+  }
+  .home .left {
+    /* gap: 12px; */
+    font-size: 1.8rem;
+    /* width: 46rem; */
+  }
+  .home img {
+    width: 260px;
+  }
+  .f {
+    width: 447px;
+    height: 65px;
+  }
+
+  .boldTitle {
+    font-size: 6rem;
+  }
+
+  .about {
+    width: 70vw;
+    font-size: larger;
+    border-right: 0px;
+    justify-content: space-between;
+  }
+  .about-edu {
+    gap: 100px;
+  }
+  .education {
+    width: 70vw;
+  }
+  .about-head {
+    padding-left: 75px;
+  }
+
+  .edu p {
+    font-size: 18px;
+  }
+
+  .projects {
+    padding: 60px;
+  }
+  .project {
+    width: 40vw;
+  }
+  .pimg img {
+    width: 100%;
+  }
+
+  .sphereWrapper {
+    top: 57%;
+  }
+  .e-head {
+    font-size: 4.5rem;
+  }
+  .el h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+  .experience-detail {
+    padding: 3rem 0;
+  }
+  .line {
+    left: 0;
+  }
+  .des {
+    font-size: larger;
+  }
+  .contact {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+  .cl h2 {
+    font-size: 4rem;
+  }
+  .slinks {
+    gap: 15px;
+    padding-left: 10px;
+  }
+  .cr {
+    padding-left: 3rem;
+  }
+  .form h2 {
+    font-size: 2em;
   }
 }
 

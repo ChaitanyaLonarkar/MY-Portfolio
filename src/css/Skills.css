@@ -209,3 +209,7 @@
   font-size: var(--fs-xs);
   color: hsl(var(--color-body));
 }
+
+
+/* --gradient-color: rgba(248, 251, 253, 1), rgba(248, 251, 253, 0);
+--gradient-width: 10%; */
