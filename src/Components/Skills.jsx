@@ -9,7 +9,7 @@ import {Skill} from "../Json/skills";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Draggable } from "gsap/Draggable";
-// import {InertiaPlugin} from "gsap/InertiaPlugin";
+// import { InertiaPlugin } from "gsap/InertiaPlugin";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -46,7 +46,7 @@ export default function Skills() {
       setActiveIndex(0);
       Draggable.create(`.circularCarousel`, {
         type: "rotation",
-        inertia: true,
+        // inertia: true,
         snap: (endVal) => gsap.utils.snap(360 / boxes.length, endVal),
         onPress: () => {
           setDragStatus("pressed");
