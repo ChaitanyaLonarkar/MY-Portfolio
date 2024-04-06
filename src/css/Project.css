@@ -103,25 +103,25 @@
   /* justify-content: space-between; */
 }
 .pleft h2 {
+  margin: 0;
   font-size: 4.7rem;
-  /* color: aliceblue; */
   font-weight: 500;
-  /* padding-top: 50px; */
   background: -webkit-linear-gradient(#46beff, #031c6b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  /* color: #00ffcb; */
 }
 .pleft p {
   font-size: 1.05rem;
 }
 
-marquee {
+.marquee {
   font-size: 50px;
   font-weight: 900;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(226, 243, 255);
+  /* -webkit-text-stroke-color: rgb(58 255 113);; */
+
 }
 
 /* after paralox sb set krne ke liye css */
@@ -133,9 +133,11 @@ marquee {
 }
 .desc {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 10px;
-  padding: 0px 30px 20px;
+  padding: 20px;
+  height: 100%;
 }
 .techstack {
   display: flex;
@@ -146,7 +148,14 @@ marquee {
 .p-name{
   font-weight: 500;
     color: #4eff79;
+    margin: 0;
 }
 .p-description{
   color:#b3ceffc4;
+}
+
+.pimg{
+  display: flex;
+  justify-content: center;
+  /* overflow: hidden; */
 }

@@ -10,6 +10,8 @@ import { SiQuicklook } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import { AllProjects } from "../Json/projects";
 
+import Marquee from "react-fast-marquee";
+
 export default function Project() {
   const galleryContainer = useRef();
   const bg = useRef();
@@ -106,17 +108,15 @@ export default function Project() {
 
       <section className="sectionProjects" id="Projects">
         <div className="marq">
-          <marquee
-            onMouseOver={(e) => {
-              e.target.stop();
-            }}
-            onMouseOut={(e) => {
-              e.target.start();
-            }}
+          <Marquee
+            pauseOnHover="true"
+   className="marquee"
+   speed={100}
+
           >
             Showcasing Showcasing Showcasing Showcasing Showcasing Showcasing
             Showcasing Showcasing Showcasing Showcasing
-          </marquee>
+          </Marquee>
         </div>
         <div className="p" ref={bg}>
           <div id="projects" className="projects" ref={galleryContainer}>

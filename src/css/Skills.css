@@ -132,8 +132,9 @@
   padding: calc(var(--cardSize) / 2);
   margin: 0 auto 0 auto;
   width: fit-content;
-  height: calc(var(--circSize) * 0.66);
+  /* height: calc(var(--circSize) * 0.66); */
   overflow: hidden;
+  height: 40rem;
 
 }
 

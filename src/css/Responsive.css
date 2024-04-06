@@ -90,7 +90,8 @@
   }
   .circles {
     height: 114%;
-    filter: blur(1px);
+    width: 83%;
+    /* filter: blur(1px); */
   }
   .about-section {
     /* height: 100vh; */
@@ -153,8 +154,8 @@
     font-size: 3rem;
     padding: 2rem;
   }
-  marquee {
-    font-size: 30px;
+  .marquee {
+    font-size: 37px;
     -webkit-text-stroke-width: 0.3px;
   }
   .project {
@@ -262,5 +263,13 @@
     text-shadow: -5px 4px #00ff3e;
   }
   
+  .circularCarouselWrapper {
+  height: 100%;
+  }
+
+  .sphereWrapper {
+    top: 66%;
+  }
+
 
 }

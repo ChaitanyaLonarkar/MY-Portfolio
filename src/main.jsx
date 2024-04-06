@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./Responsive.css";
+// import "./Responsive.css";
 import "./css/Preloader.css";
 import "./css/Skills.css";
 import "./css/About.css";

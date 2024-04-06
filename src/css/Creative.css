@@ -21,7 +21,7 @@
   color: #ffffffdb;
   line-height: 1.5cap;
   text-align: center;
-
+margin: 0;
   span {
     display: block;
   }

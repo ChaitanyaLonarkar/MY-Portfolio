@@ -14,6 +14,10 @@ export default function Contact() {
           </h2>
           <p>Chaitanyalonarkar@gmail.com</p>
           <div className="icons">
+            <div>
+
+            <h3 style={{margin:0,fontWeight:400}}>Connect with Me</h3>
+            </div>
             <div className="slinks clinks">
               <a href="http://" target="_blank">
                 <FaLinkedin />

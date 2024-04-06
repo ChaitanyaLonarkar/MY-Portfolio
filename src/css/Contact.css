@@ -12,7 +12,7 @@
 .cl{
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 40px;
 }
 .cl h2{
     background: -webkit-linear-gradient(#46beff, #031c6b);
@@ -20,13 +20,23 @@
     -webkit-text-fill-color: transparent;
     font-weight: 500;
     font-size: 5rem;
+    margin: 0;
+}
+.cl p{
+    margin: 0;
+    color: #91a9d5c9;
+}
+.cl .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .cr{
     padding-left: 5rem;
     border-left: 1px solid #8080803b;
 }
 .clinks a{
-    color: azure;
+    color: #00ff26;
 }
 .clinks a:hover {
     color: rgb(255, 247, 0);
@@ -37,12 +47,12 @@
 .form h2{
     font-size: 2.5em;
     font-weight: 300;
-
+    margin: 0;
 }
 .form h3{
     font-size: 1.5em;
     font-weight: 300;
-
+    margin: 0;
 }
 form{
     display: flex;
