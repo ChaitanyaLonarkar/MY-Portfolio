@@ -1,18 +1,25 @@
 import { useEffect } from "react";
 import { FaGithub } from "react-icons/fa6";
 import React, { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import { SiQuicklook } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import { AllProjects } from "../Json/projects";
 
 import Marquee from "react-fast-marquee";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { SplitText } from "gsap/SplitText";
+import { SplitText } from "gsap-trial/SplitText";
+import { Timeline } from "gsap/gsap-core";
+
 export default function Project() {
   const galleryContainer = useRef();
+  const blueHeading = useRef();
   const bg = useRef();
+  const textRef = useRef();
 
   // const container = useRef();
   // const { contextSafe } = useGSAP({scope: container});
@@ -99,6 +106,70 @@ export default function Project() {
   //     element.scrollLeft +=event.deltaY
 
   //   };
+  const scale = useRef();
+
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+
+  // useGSAP(() => {
+  //   const reveal2 = (e) => {
+  //     if (e.current) {
+  //       const splitText = new SplitText(e.current, {
+  //         type: "chars, lines",
+  //         // linesClass: `${styles.splitLine}`,
+  //         // lineThreshold: 5,
+  //       });
+
+  //       const elements = splitText.chars;
+  //       gsap.from(elements, {
+  //         yPercent: 10,
+  //         scale: 1,
+  //         scrollTrigger: {
+  //           trigger: elements,
+  //           toggleActions: "restart play play reverse",
+  //           start: "top 95%",
+  //         },
+  //         duration: 0.5,
+  //         autoAlpha: 0,
+  //         ease: "power1.out",
+  //         // ease:"",
+  //         stagger: 0.01,
+  //       });
+  //     }
+  //   };
+  //   // reveal2(aboutmepara)
+  //   reveal2(scale);
+  // });
+  const reveal = (e) => {
+    useGSAP(
+      () => {
+        if (e.current) {
+          const splitText = new SplitText(e.current, {
+            type: "chars, lines",
+            // linesClass: `${styles.splitLine}`,
+            // lineThreshold: 5,
+          });
+
+          const elements = splitText.chars;
+
+          gsap.from(elements, {
+            yPercent: 100,
+            scrollTrigger: {
+              trigger: e.current,
+              toggleActions: "restart pause resume reverse",
+              start: "top 85%",
+            },
+            duration: 0.5,
+            autoAlpha: 0,
+            ease: "power1.out",
+            stagger: 0.009,
+          });
+        }
+      },
+      { scope: e }
+    );
+  };
+    reveal(scale);
+
 
   return (
     <>
@@ -106,12 +177,7 @@ export default function Project() {
 
       <section className="sectionProjects" id="Projects">
         <div className="marq">
-          <Marquee
-            pauseOnHover="true"
-   className="marquee"
-   speed={100}
-
-          >
+          <Marquee pauseOnHover="true" className="marquee" speed={100}>
             Showcasing Showcasing Showcasing Showcasing Showcasing Showcasing
             Showcasing Showcasing Showcasing Showcasing
           </Marquee>
@@ -120,12 +186,11 @@ export default function Project() {
           <div id="projects" className="projects" ref={galleryContainer}>
             {/* <div className="prights" onWheel={wheel}> */}
 
-            <div className="pleft">
-              <h2>
+            <div className="pleft" ref={blueHeading}>
+              <h2 ref={scale}>
                 Selected <br />
                 Works
               </h2>
-              
             </div>
             <div className="prights">
               {AllProjects.map((project, index) => (
@@ -135,9 +200,7 @@ export default function Project() {
                   </div>
                   <div className="desc">
                     <h3 className="p-name">{project.title}</h3>
-                    <div className="p-description">
-                      {project.description}
-                    </div>
+                    <div className="p-description">{project.description}</div>
                     <div className="techstack">
                       <div className="thead">
                         <b>Tech Stack :</b>
@@ -157,7 +220,6 @@ export default function Project() {
                   </div>
                 </div>
               ))}
-              
             </div>
           </div>
         </div>

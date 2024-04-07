@@ -1,12 +1,39 @@
-import React from "react";
+import React,{useRef} from "react";
 import logo from "../assets/img/logo.png";
 import { FaGithub } from "react-icons/fa6";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap-trial/SplitText";
+
 
 export default function Navbar() {
+
+  const nav = useRef();
+
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+
+  useGSAP(()=>{
+    // reveal(kbtn)
+    gsap.from(nav.current, {
+      // yPercent: -100,
+      scale:0.5,
+      // scrollTrigger: {
+      //   trigger: merimg.current,
+      //   toggleActions: "restart pause resume reverse",
+      //   start: "top 95%",
+      // },
+      duration: 1,
+      autoAlpha: 0,
+      ease: "power1.out",
+      stagger: 0.05,
+    });
+    
+  })
   return (
     <>
       <div className="nav">
-        <div className="outer">
+        <div className="outer" ref={nav}>
           <div className="logo">
             {/* <img src={logo} alt="" /> */}
             Chaitanya Lonarkar

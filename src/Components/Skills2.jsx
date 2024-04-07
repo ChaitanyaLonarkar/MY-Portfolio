@@ -1,10 +1,47 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Skill } from "../Json/skills";
 import { Language } from "../Json/skills";
 
 import Marquee from "react-fast-marquee";
-
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { SplitText } from "gsap/SplitText";
+import { SplitText } from "gsap-trial/SplitText";
 export default function Skills2() {
+
+  const sk = useRef()
+
+  const reveal = (e) => {
+    useGSAP(
+      () => {
+        if (e.current) {
+          const splitText = new SplitText(e.current, {
+            type: "chars, lines",
+            // linesClass: `${styles.splitLine}`,
+            // lineThreshold: 5,
+          });
+
+          const elements = splitText.chars;
+
+          gsap.from(elements, {
+            yPercent: 100,
+            scrollTrigger: {
+              trigger: e.current,
+              toggleActions: "restart pause resume reverse",
+              start: "top 75%",
+            },
+            duration: 0.5,
+            autoAlpha: 0,
+            ease: "power1.out",
+            stagger: 0.009,
+          });
+        }
+      },
+      { scope: e }
+    );
+  };
+  reveal(sk)
   return (
     <>
       <section className="section" id={"skills"}>
@@ -13,7 +50,7 @@ export default function Skills2() {
                     <Blobs type={'v1'} classVariable={`blob blobV1`}/>
                 </div> */}
         {/* < className={"grid"}> */}
-        <div className={"white"}>
+        <div className={"white"} ref={sk}>
           <span>My</span> <br /> Skillset
         </div>
         {/* < className={"circularCarouselWrapper"}> */}
@@ -24,7 +61,7 @@ export default function Skills2() {
               <div className="l"></div>
               <div className="r"></div>
             </div>
-            <Marquee>
+            <Marquee pauseOnHover="true"> 
               <div className="skills-icon">
                 {Skill.map((skill, index) => (
                   <div key={index} className="each-skill" >
@@ -39,7 +76,7 @@ export default function Skills2() {
                     <p
                       style={{
                         color: "White",
-                        fontWeight: "400",
+                        fontWeight: "300",
                         textAlign: "center",
                       }}
                     >
@@ -70,7 +107,7 @@ export default function Skills2() {
                     <p
                       style={{
                         color: "White",
-                        fontWeight: "400",
+                        fontWeight: "300",
                         textAlign: "center",
                       }}
                     >

@@ -15,11 +15,11 @@
     gap: 40px;
 }
 .cl h2{
-    background: -webkit-linear-gradient(#46beff, #031c6b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 500;
-    font-size: 5rem;
+    font-weight: 600;
+    color: #00ff3e;
+    text-shadow: 3px 5px #0283ff;
+    margin: 0;
+    font-size: 4.7rem;
     margin: 0;
 }
 .cl p{

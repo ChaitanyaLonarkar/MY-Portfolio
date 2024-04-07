@@ -46,9 +46,8 @@
   /* background: rgb(8 37 37); */
   /* background: rgb(50 60 60 / 30%); */
   /* background: rgb(24 38 53 / 30%); */
-  background:rgb(51 67 84 / 30%);
+  background: rgb(51 67 84 / 30%);
   transition: all 0.5s;
-  
 }
 /* .project:hover{
     scale: 1.05;
@@ -61,36 +60,35 @@
 }
 .projects a {
   /* background: white;  */
-    padding: 0.5rem 0rem;
-    border-radius: 0.3rem;
-    /* width: 8rem; */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    font-size: medium;
-    text-decoration: none;
-    /* color: #41ffed; */
-    color: #b768ff;
-    font-weight: 500;
-    transition: all 0.5s;
-    cursor: pointer;
+  padding: 0.5rem 0rem;
+  border-radius: 0.3rem;
+  /* width: 8rem; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-size: medium;
+  text-decoration: none;
+  /* color: #41ffed; */
+  color: #b768ff;
+  font-weight: 500;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-.projects a:hover  {
+.projects a:hover {
   scale: 1.08;
-    color: #ffffffb0;;
+  color: #ffffffb0;
 }
 .projects a:hover > .live-icon {
   /* scale: 1.08; */
-  color: #b768ff
+  color: #b768ff;
 }
-.live-icon{
+.live-icon {
   color: aliceblue;
   font-size: 1.4rem;
   transition: all 0.5s;
-
 }
 .pleft {
   /* font-size: xx-large; */
@@ -103,12 +101,11 @@
   /* justify-content: space-between; */
 }
 .pleft h2 {
+  font-weight: 600;
+  color: #00ff3e;
+  text-shadow: 3px 5px #0283ff;
   margin: 0;
   font-size: 4.7rem;
-  font-weight: 500;
-  background: -webkit-linear-gradient(#46beff, #031c6b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .pleft p {
   font-size: 1.05rem;
@@ -121,15 +118,13 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(226, 243, 255);
   /* -webkit-text-stroke-color: rgb(58 255 113);; */
-
 }
 
 /* after paralox sb set krne ke liye css */
 
 .pimg img {
   /* width: 28.7em; */
-      width: 100%;
-
+  width: 100%;
 }
 .desc {
   display: flex;
@@ -144,17 +139,16 @@
   gap: 5px;
 }
 
-
-.p-name{
+.p-name {
   font-weight: 500;
-    color: #4eff79;
-    margin: 0;
+  color: #4eff79;
+  margin: 0;
 }
-.p-description{
-  color:#b3ceffc4;
+.p-description {
+  color: #b3ceffc4;
 }
 
-.pimg{
+.pimg {
   display: flex;
   justify-content: center;
   /* overflow: hidden; */

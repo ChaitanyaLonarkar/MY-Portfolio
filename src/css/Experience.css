@@ -12,12 +12,11 @@
   letter-spacing: 0.5px;
 }
 .e-head {
-  font-size: 5rem;
-  background: -webkit-linear-gradient(#46beff, #031c6b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 500;
-  font-size: 5rem;
+  font-weight: 600;
+    color: #00ff3e;
+    text-shadow: 3px 5px #0283ff;
+    margin: 0;
+    font-size: 4.7rem;
   /* color: aqua; */
 }
 .el .h2 {

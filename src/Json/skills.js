@@ -112,7 +112,7 @@ export const Language = [
   },
   {
     image: github,
-    title: "NextJS",
+    title: "Github",
     
   },{
     image: Iconjava,

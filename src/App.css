@@ -366,6 +366,7 @@ html {
   /* background: #d4ffa7; */
   background: linear-gradient(90deg, rgb(39 125 101) 0%, rgb(28 86 68) 100%);
   animation: textrotate 3s linear infinite;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
   /* -webkit-animation: textrotate 3s linear infinite; */
 }
 @keyframes textrotate {

@@ -25,11 +25,11 @@
 }
  .white {
   /* color: aqua; */
-  background: -webkit-linear-gradient(#46beff, #031c6b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  font-weight: 500;
-  font-size: 5rem;
+  font-weight: 600;
+    color: #00ff3e;
+    text-shadow: 3px 5px #0283ff;
+    margin: 0;
+    font-size: 4.7rem;
   padding: 1rem 5rem;
 
 }
@@ -229,8 +229,8 @@
 .overlay {
   position: absolute;
     z-index: 5;
-  width: 92vw;
-  height: 20vh;
+  width: 89vw;
+  /* height: 20vh; */
   --gradient-color: rgba(248, 251, 253, 1), rgba(248, 251, 253, 0);
   --gradient-width: 10%;
   /* background: linear-gradient(rgba(248, 251, 253, 1), rgba(248, 251, 253, 0)); */
@@ -241,9 +241,9 @@
 .overlay2 {
   position: absolute;
   z-index: 5;
-  top: 620px;
+  top: 580px;
   /* border: 1px solid; */
-  width: 92vw;
+  width: 89vw;
   /* height: 20vh; */
   --gradient-color: rgba(248, 251, 253, 1), rgba(248, 251, 253, 0);
   --gradient-width: 10%;
@@ -254,13 +254,13 @@
 }
 .l {
   width: 177px;
-  height: 150px;
+  height: 177px;
   /* background-color: #9829ff; */
   background: linear-gradient(91deg, #0e0e1a, #0e0e18cf, #0b0b1300);
 }
 .r{
   width: 177px;
-  height: 150px;
+  height: 177px;
   /* background-color: #9829ff; */
   /* background: linear-gradient(91deg,  #0e0e18cf, #0b0b1300); */
   background: linear-gradient(91deg, #0b0b1200, #0b0b12d9, #0b0b12);
