@@ -123,7 +123,7 @@
     width: 100%;
   }
 
-  .grid .white {
+  .white {
     font-size: 4.5rem;
   }
   .sphereWrapper {
@@ -170,6 +170,22 @@
   }
   .circles {
     width: 91%;
+  }
+  .overlay {
+    width: 86vw;
+    display: none;
+  }
+  .overlay2 {
+    display: none;
+    /* top: 625px;
+    width: 85vw; */
+  }
+
+  .each-skill{
+    padding: 0 40px;
+  }
+  .mark{
+    margin: 10rem 0;
   }
 }
 
@@ -231,7 +247,7 @@
     padding: 60px;
   }
   .project {
-    width: 40vw;
+    width: 39vw;
   }
   .pimg img {
     width: 100%;
@@ -540,5 +556,44 @@
 
   .sphereWrapper {
     top: 66%;
+  }
+
+  .mark {
+    /* padding: 5rem; */
+    margin: 5rem 2rem;
+  }
+  .l,.r {
+    width: 20vw;
+    height: 158px;
+  }
+  .overlay {
+    width: 86vw;
+    display: none;
+  }
+  .overlay2 {
+    display: none;
+    /* top: 625px;
+    width: 85vw; */
+  }
+  /* .scale {
+    transform: scale(0.7);
+  } */
+  .each-skill{
+    padding: 0 20px;
+  }
+
+  .each-skill .image{
+    width: 70px;
+    height: 70px;
+  }
+  .each-skill p {
+    font-size: 15px;
+  }
+  .white {
+    font-size: 3.5rem;
+    padding-left: 3rem;
+  }
+  .mark{
+    margin: 5rem 0;
   }
 }

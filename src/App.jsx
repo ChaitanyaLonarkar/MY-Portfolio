@@ -10,7 +10,7 @@ import Footer from "./Components/Footer";
 
 import Animation from "./Components/Animation";
 import Project from "./Components/Project";
-import Skills from "./Components/Skills";
+import Skills2 from "./Components/Skills2";
 import Preloader from "./Components/Preloader";
 import Partiles from "./Components/Partiles";
 import { useParallax } from "react-scroll-parallax";
@@ -70,7 +70,7 @@ function App() {
         <Creative />
         <About />
         <Project />
-        <Skills />
+        <Skills2 />
         <Experience />
         <Contact />
         <Footer />
