@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { SplitText } from "gsap/SplitText";
-import { SplitText } from "gsap-trial/SplitText";
+// import { SplitText } from "gsap-trial/SplitText";
 
 export default function Creative() {
   const boldTitle = useRef();
@@ -14,8 +14,8 @@ export default function Creative() {
   const para2 = useRef();
 
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger, SplitText);
-    // gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollTrigger, SplitText);
+    gsap.registerPlugin(ScrollTrigger);
 
     // const splitTextLeft = new SplitText(boldTitleLeft.current, {
     //   type: "chars",
@@ -59,19 +59,19 @@ export default function Creative() {
 
     const reveal = (e) => {
       if (e.current) {
-        const splitText = new SplitText(e.current, {
-          type: "chars, lines",
-          // linesClass: `${styles.splitLine}`,
-          // lineThreshold: 5,
-        });
+        // const splitText = new SplitText(e.current, {
+        //   type: "chars, lines",
+        //   // linesClass: `${styles.splitLine}`,
+        //   // lineThreshold: 5,
+        // });
 
-        const elements = splitText.chars;
-        gsap.from(elements, {
+        // const elements = splitText.chars;
+        gsap.from(e.current, {
           // yPercent: -100,
           scale: 0.5,
           scrollTrigger: {
-            trigger: elements,
-            // toggleActions: "restart pause resume reverse",
+            trigger: e.current,
+            toggleActions: "restart pause resume reverse",
             start: "top 95%",
           },
           duration: 0.5,

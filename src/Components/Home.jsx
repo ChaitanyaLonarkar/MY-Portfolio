@@ -10,7 +10,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
+// import { SplitText } from "gsap-trial/SplitText";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -21,21 +21,23 @@ export default function Home() {
   const kbtn = useRef();
   const merimg = useRef();
 
-  gsap.registerPlugin(ScrollTrigger, SplitText);
+  // gsap.registerPlugin(ScrollTrigger, SplitText);
+  gsap.registerPlugin(ScrollTrigger);
+
 
   const reveal = (e) => {
     useGSAP(
       () => {
         if (e.current) {
-          const splitText = new SplitText(e.current, {
-            type: "chars, lines",
-            // linesClass: `${styles.splitLine}`,
-            // lineThreshold: 5,
-          });
+          // const splitText = new SplitText(e.current, {
+          //   type: "chars, lines",
+          //   // linesClass: `${styles.splitLine}`,
+          //   // lineThreshold: 5,
+          // });
 
-          const elements = splitText.chars;
+          // const elements = splitText.chars;
 
-          gsap.from(elements, {
+          gsap.from(e.current, {
             yPercent: 100,
             scrollTrigger: {
               trigger: e.current,

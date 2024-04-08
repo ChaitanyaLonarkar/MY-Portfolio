@@ -7,13 +7,13 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
+// import { SplitText } from "gsap-trial/SplitText";
 export default function Contact() {
 
   const c = useRef()
   const c2 = useRef()
 
-  gsap.registerPlugin(ScrollTrigger, SplitText);
+  gsap.registerPlugin(ScrollTrigger);
   useGSAP(()=>{
 
   gsap.from(c.current, {
@@ -57,13 +57,14 @@ export default function Contact() {
             <h3 style={{margin:0,fontWeight:400}}>Connect with Me</h3>
             </div>
             <div className="slinks clinks">
-              <a href="http://" target="_blank">
+              <a href="https://www.linkedin.com/in/chaitanya-lonarkar-581960244/"
+                target="_blank">
                 <FaLinkedin />
               </a>
-              <a href="http://" target="_blank">
+              <a href="https://github.com/ChaitanyaLonarkar" target="_blank">
                 <FaSquareGithub />
               </a>
-              <a href="http://" target="_blank">
+              <a href="https://twitter.com/CLonarkar24" target="_blank">
                 <FaSquareXTwitter />
               </a>
               {/* <a href="http://" target="_blank"></a> */}

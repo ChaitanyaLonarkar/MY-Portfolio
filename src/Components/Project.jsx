@@ -12,14 +12,14 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { SplitText } from "gsap/SplitText";
-import { SplitText } from "gsap-trial/SplitText";
-import { Timeline } from "gsap/gsap-core";
+// import { SplitText } from "gsap-trial/SplitText";
+// import { Timeline } from "gsap/gsap-core";
 
 export default function Project() {
   const galleryContainer = useRef();
   const blueHeading = useRef();
   const bg = useRef();
-  const textRef = useRef();
+  // const textRef = useRef();
 
   // const container = useRef();
   // const { contextSafe } = useGSAP({scope: container});
@@ -107,51 +107,27 @@ export default function Project() {
 
   //   };
   const scale = useRef();
+  // const pref = useRef();
 
-  gsap.registerPlugin(ScrollTrigger, SplitText);
 
-  // useGSAP(() => {
-  //   const reveal2 = (e) => {
-  //     if (e.current) {
-  //       const splitText = new SplitText(e.current, {
-  //         type: "chars, lines",
-  //         // linesClass: `${styles.splitLine}`,
-  //         // lineThreshold: 5,
-  //       });
+  gsap.registerPlugin(ScrollTrigger);
 
-  //       const elements = splitText.chars;
-  //       gsap.from(elements, {
-  //         yPercent: 10,
-  //         scale: 1,
-  //         scrollTrigger: {
-  //           trigger: elements,
-  //           toggleActions: "restart play play reverse",
-  //           start: "top 95%",
-  //         },
-  //         duration: 0.5,
-  //         autoAlpha: 0,
-  //         ease: "power1.out",
-  //         // ease:"",
-  //         stagger: 0.01,
-  //       });
-  //     }
-  //   };
-  //   // reveal2(aboutmepara)
-  //   reveal2(scale);
-  // });
+ 
+
+
   const reveal = (e) => {
     useGSAP(
       () => {
         if (e.current) {
-          const splitText = new SplitText(e.current, {
-            type: "chars, lines",
-            // linesClass: `${styles.splitLine}`,
-            // lineThreshold: 5,
-          });
+          // const splitText = new SplitText(e.current, {
+          //   type: "chars, lines",
+          //   // linesClass: `${styles.splitLine}`,
+          //   // lineThreshold: 5,
+          // });
 
-          const elements = splitText.chars;
+          // const elements = splitText.chars;
 
-          gsap.from(elements, {
+          gsap.from(e.current, {
             yPercent: 100,
             scrollTrigger: {
               trigger: e.current,
@@ -161,7 +137,7 @@ export default function Project() {
             duration: 0.5,
             autoAlpha: 0,
             ease: "power1.out",
-            stagger: 0.009,
+            stagger: 1,
           });
         }
       },
@@ -169,6 +145,37 @@ export default function Project() {
     );
   };
     reveal(scale);
+    // const reveal2 = (e) => {
+    //   useGSAP(
+    //     () => {
+    //       if (e.current) {
+    //         // const splitText = new SplitText(e.current, {
+    //         //   type: "chars, lines",
+    //         //   // linesClass: `${styles.splitLine}`,
+    //         //   // lineThreshold: 5,
+    //         // });
+  
+    //         // const elements = splitText.chars;
+  
+    //         gsap.from(e.current, {
+    //           // yPercent: 100,
+    //           scale:0,
+    //           scrollTrigger: {
+    //             trigger: e.current,
+    //             toggleActions: "restart pause resume reverse",
+    //             start: "top 5%",
+    //           },
+    //           duration: 0.5,
+    //           // autoAlpha: 0,
+    //           ease: "power1.out",
+    //           stagger: 1,
+    //         });
+    //       }
+    //     },
+    //     { scope: e }
+    //   );
+    // };
+    // reveal2(pref);
 
 
   return (
@@ -186,7 +193,7 @@ export default function Project() {
           <div id="projects" className="projects" ref={galleryContainer}>
             {/* <div className="prights" onWheel={wheel}> */}
 
-            <div className="pleft" ref={blueHeading}>
+            <div className="pleft" ref={blueHeading} style={{overflow:"hidden"}}>
               <h2 ref={scale}>
                 Selected <br />
                 Works
@@ -194,11 +201,11 @@ export default function Project() {
             </div>
             <div className="prights">
               {AllProjects.map((project, index) => (
-                <div id="project" className="project" key={index}>
+                <div id="project" className="project" key={index} >
                   <div className="pimg">
                     <img src={project.image} alt={project.title} />
                   </div>
-                  <div className="desc">
+                  <div className="desc" >
                     <h3 className="p-name">{project.title}</h3>
                     <div className="p-description">{project.description}</div>
                     <div className="techstack">

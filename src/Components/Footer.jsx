@@ -13,49 +13,58 @@ export default function Footer() {
 
   const first = useRef();
 
+  const second = useRef();
+  const third = useRef();
+  const fourth = useRef();
 
-  gsap.registerPlugin(ScrollTrigger, SplitText);
+
+
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     const reveal = (e) => {
       if (e.current) {
-        const splitText = new SplitText(e.current, {
-          type: "chars, lines",
-          // linesClass: `${styles.splitLine}`,
-          // lineThreshold: 5,
-        });
+        // const splitText = new SplitText(e.current, {
+        //   type: "chars, lines",
+        //   // linesClass: `${styles.splitLine}`,
+        //   // lineThreshold: 5,
+        // });
 
-        const elements = splitText.chars;
+        // const elements = splitText.chars;
 
-        gsap.from(elements, {
+        gsap.from(e.current, {
           yPercent: 10,
           scrollTrigger: {
             trigger: e.current,
             toggleActions: "restart pause resume reverse",
-            start: "top 85%",
+            start: "top 93%",
           },
-          duration: 0.2,
+          duration: 0.7,
           autoAlpha: 0,
           ease: "power1.out",
-          stagger: 0.009,
+          stagger: 0.1,
         });
       }
     };
     reveal(first)
+    reveal(second)
+    reveal(third)
+    reveal(fourth)
+
 
     
 });
   return (
     <>
       <section className="footer">
-        <div className="info" ref={first}>
+        <div className="info" >
 
 
 
-            <p><RiCopyrightLine /> 2024 Chaitanya Lonarkar</p>
-            <p>Made by Chaitanya with  💗 and 😍 </p>
-            <p>Powered by React.js, GitHub and Netlify.</p>
-            <p>Gondia(MH), India</p>
+            <p ref={first} ><RiCopyrightLine /> 2024 Chaitanya Lonarkar</p>
+            <p ref={second}>Made by Chaitanya with  💗 and 😍 </p>
+            <p ref={third}>Powered by React.js, GitHub and Netlify.</p>
+            <p ref={fourth}>Gondia(MH), India</p>
           
           
         </div>

@@ -16,15 +16,15 @@ export default function Skills2() {
     useGSAP(
       () => {
         if (e.current) {
-          const splitText = new SplitText(e.current, {
-            type: "chars, lines",
-            // linesClass: `${styles.splitLine}`,
-            // lineThreshold: 5,
-          });
+          // const splitText = new SplitText(e.current, {
+          //   type: "chars, lines",
+          //   // linesClass: `${styles.splitLine}`,
+          //   // lineThreshold: 5,
+          // });
 
-          const elements = splitText.chars;
+          // // const elements = splitText.chars;
 
-          gsap.from(elements, {
+          gsap.from(e.current, {
             yPercent: 100,
             scrollTrigger: {
               trigger: e.current,

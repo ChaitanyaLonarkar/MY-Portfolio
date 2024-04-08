@@ -7,7 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { SplitText } from "gsap/SplitText";
-import { SplitText } from "gsap-trial/SplitText";
+// import { SplitText } from "gsap-trial/SplitText";
 
 export default function About() {
   // const h3 = useRef();
@@ -18,89 +18,57 @@ export default function About() {
   const scale = useRef();
   const scale2 = useRef();
 
-  gsap.registerPlugin(ScrollTrigger, SplitText);
+  // gsap.registerPlugin(ScrollTrigger, SplitText);
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
-
     const reveal2 = (e) => {
       if (e.current) {
-        const splitText = new SplitText(e.current, {
-          type: "chars, lines",
-          // linesClass: `${styles.splitLine}`,
-          // lineThreshold: 5,
-        });
+        // const splitText = new SplitText(e.current, {
+        //   type: "chars, lines",
+        //   // linesClass: `${styles.splitLine}`,
+        //   // lineThreshold: 5,
+        // });
 
-        const elements = splitText.chars;
-        gsap.from(elements, {
-          // yPercent: 10,
+        // const elements = splitText.chars;
+        gsap.from(e.current, {
+          yPercent: 20,
           scale: 1,
           scrollTrigger: {
-            trigger: elements,
+            trigger: e.current,
             toggleActions: "restart play play reverse",
-            start: "top 95%",
+            start: "top 65%",
           },
-          duration: 0.5,
+          duration: 0.8,
           autoAlpha: 0,
           ease: "power1.out",
           // ease:"",
-          stagger: 0.01,
+          stagger: 1,
         });
       }
     };
-    // reveal2(aboutmepara)
     reveal2(scale2);
     reveal2(scale);
-    // const reveal = (e) => {
-    //   if (e.current) {
-    //     const splitText = new SplitText(e.current, {
-    //       type: "chars, lines",
-    //       // linesClass: `${styles.splitLine}`,
-    //       lineThreshold: 5,
-    //     });
-
-    //     const elements = splitText.chars;
-    //     gsap.from(elements, {
-    //       // yPercent: 100,
-    //       scale: 0.2,
-    //       scrollTrigger: {
-    //         trigger: elements,
-    //         // toggleActions: "restart pause resume reverse",
-    //         start: "top 95%",
-    //       },
-    //       duration: 0.5,
-    //       // autoAlpha: 0,
-    //       // ease: "power1.out",
-    //       // // ease:"",
-    //       // stagger: 0.01,
-    //     });
-    //   }
-
-    // };
-    // reveal(blueHeading);
-
-    // reveal(aboutmepara);
-    
   });
 
- 
   const reveal = (e) => {
     useGSAP(
       () => {
         if (e.current) {
-          const splitText = new SplitText(e.current, {
-            type: "chars, lines",
-            // linesClass: `${styles.splitLine}`,
-            // lineThreshold: 5,
-          });
+          // const splitText = new SplitText(e.current, {
+          //   type: "chars, lines",
+          //   // linesClass: `${styles.splitLine}`,
+          //   // lineThreshold: 5,
+          // });
 
-          const elements = splitText.chars;
+          // const e.current = splitText.chars;
 
-          gsap.from(elements, {
+          gsap.from(e.current, {
             yPercent: 100,
             scrollTrigger: {
               trigger: e.current,
               toggleActions: "restart pause resume reverse",
-              start: "top 85%",
+              start: "top 90%",
             },
             duration: 0.5,
             autoAlpha: 0,
@@ -113,15 +81,15 @@ export default function About() {
     );
   };
   reveal(textRef);
-  // reveal(h3);
-  // reveal(h1);
 
   return (
     <>
       <section className="about-section" id="about">
-        <div className="about-head" ref={textRef}>
-          <p>About</p>
-          <p>Education</p>
+        <div style={{ overflow: "hidden" }}>
+          <div className="about-head" ref={textRef}>
+            <p>About</p>
+            <p>Education</p>
+          </div>
         </div>
         <div className="about-edu">
           <div className="about" ref={scale}>

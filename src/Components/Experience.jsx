@@ -3,32 +3,33 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
+// import { SplitText } from "gsap-trial/SplitText";
 
 export default function Experience() {
   const first = useRef();
   const head = useRef();
+  const second = useRef();
+  const third = useRef();
 
-
-  gsap.registerPlugin(ScrollTrigger, SplitText);
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     const reveal = (e) => {
       if (e.current) {
-        const splitText = new SplitText(e.current, {
-          type: "chars, lines",
-          // linesClass: `${styles.splitLine}`,
-          // lineThreshold: 5,
-        });
+        // const splitText = new SplitText(e.current, {
+        //   type: "chars, lines",
+        //   // linesClass: `${styles.splitLine}`,
+        //   // lineThreshold: 5,
+        // });
 
-        const elements = splitText.chars;
+        // const elements = splitText.chars;
 
-        gsap.from(elements, {
-          yPercent: 10,
+        gsap.from(e.current, {
+          yPercent: 101,
           scrollTrigger: {
             trigger: e.current,
             toggleActions: "restart pause resume reverse",
-            start: "top 85%",
+            start: "top 90%",
           },
           duration: 0.2,
           autoAlpha: 0,
@@ -38,19 +39,22 @@ export default function Experience() {
       }
     };
     reveal(first)
+    reveal(second)
+    reveal(third)
+
 
     const reveal2 = (e) => {
     
       if (e.current) {
-        const splitText = new SplitText(e.current, {
-          type: "chars, lines",
-          // linesClass: `${styles.splitLine}`,
-          // lineThreshold: 5,
-        });
+        // const splitText = new SplitText(e.current, {
+        //   type: "chars, lines",
+        //   // linesClass: `${styles.splitLine}`,
+        //   // lineThreshold: 5,
+        // });
 
-        const elements = splitText.chars;
+        // const elements = splitText.chars;
 
-        gsap.from(elements, {
+        gsap.from(e.current, {
           yPercent: 100,
           scrollTrigger: {
             trigger: e.current,
@@ -74,12 +78,15 @@ export default function Experience() {
   return (
     <>
       <div className="experience">
+        <div style={{overflow:"hidden"}}>
+
         <div className="e-head"ref={head}>
           Experience <br />
           History
         </div>
-        <div className="allExp" ref={first}>
-          <div className="experience-detail">
+        </div>
+        <div className="allExp" >
+          <div className="experience-detail" ref={first}>
             <div className="el">
               <div className="h2">
                 <h2>Web Developer Co-oridinator</h2>
@@ -96,7 +103,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="line" />
-          <div className="experience-detail">
+          <div className="experience-detail" ref={second}>
             <div className="el">
               <div className="h2">
                 <h2>Web Designer Intern</h2>
@@ -113,7 +120,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="line" />
-          <div className="experience-detail">
+          <div className="experience-detail" ref={third}>
             <div className="el">
               <div className="h2">
                 <h2>Web Developer Intern</h2>
