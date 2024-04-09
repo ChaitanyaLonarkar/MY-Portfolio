@@ -22,6 +22,7 @@ export default function Navbar() {
       //   toggleActions: "restart pause resume reverse",
       //   start: "top 95%",
       // },
+      delay:0.6,
       duration: 1,
       autoAlpha: 0,
       ease: "power1.out",

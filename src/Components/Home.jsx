@@ -22,13 +22,10 @@ export default function Home() {
 
   gsap.registerPlugin(ScrollTrigger);
 
-
   const reveal = (e) => {
     useGSAP(
       () => {
         if (e.current) {
-        
-
           gsap.from(e.current, {
             yPercent: 100,
             scrollTrigger: {
@@ -37,6 +34,8 @@ export default function Home() {
               start: "top 85%",
             },
             duration: 0.5,
+            delay: 0.6,
+
             autoAlpha: 0,
             ease: "power1.out",
             stagger: 0.05,
@@ -50,26 +49,27 @@ export default function Home() {
   reveal(h3);
   reveal(h1);
 
-  useGSAP(()=>{
-  // reveal(kbtn)
-  gsap.from(merimg.current, {
-    scale:0.5,
-    duration: 1,
-    autoAlpha: 0,
-    ease: "power1.out",
-    stagger: 0.05,
-  });
+  useGSAP(() => {
+    // reveal(kbtn)
+    gsap.from(merimg.current, {
+      scale: 0.5,
+      duration: 1,
+      autoAlpha: 0,
+      delay: 0.6,
+      ease: "power1.out",
+      stagger: 0.05,
+    });
 
-  gsap.from(kbtn.current , {
-    yPercent: 100,
-    duration: 0.5,
-    autoAlpha: 0,
-    ease: "power1.out",
-    stagger: 0.05,
-  });
-  
-})
+    gsap.from(kbtn.current, {
+      yPercent: 100,
+      duration: 0.5,
+      autoAlpha: 0,
+      delay: 0.6,
 
+      ease: "power1.out",
+      stagger: 0.05,
+    });
+  });
 
   return (
     <>
@@ -84,19 +84,19 @@ export default function Home() {
             </h3>
           </div>
           <div className="div" style={{ overflow: "hidden" }}>
-            <h1 ref={h3}>Frontend Devloper</h1>
+            <h1 ref={h3}>Frontend Developer</h1>
           </div>
           <div className="f">
             <div className="div" style={{ overflow: "hidden" }}>
               <h1 className="ff" ref={h1}>
-                -FullStack Devloper
+                -FullStack Developer
               </h1>
             </div>
             <div className="fff"></div>
           </div>
-          <div className="kbtn" ref={kbtn} style={{overflow:"hidden"}}>
+          <div className="kbtn" ref={kbtn} style={{ overflow: "hidden" }}>
             {/* <button>Know Me</button> */}
-            
+
             <button>
               <a href="#Allsection">Get to Know Me</a>
             </button>
@@ -115,7 +115,6 @@ export default function Home() {
               </a>
             </div>
           </div>
-
         </div>
       </section>
     </>
