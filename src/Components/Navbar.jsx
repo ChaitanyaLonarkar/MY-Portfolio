@@ -4,14 +4,13 @@ import { FaGithub } from "react-icons/fa6";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
 
 
 export default function Navbar() {
 
   const nav = useRef();
 
-  gsap.registerPlugin(ScrollTrigger, SplitText);
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(()=>{
     // reveal(kbtn)

@@ -10,7 +10,6 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { SplitText } from "gsap-trial/SplitText";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -21,7 +20,6 @@ export default function Home() {
   const kbtn = useRef();
   const merimg = useRef();
 
-  // gsap.registerPlugin(ScrollTrigger, SplitText);
   gsap.registerPlugin(ScrollTrigger);
 
 
@@ -29,13 +27,7 @@ export default function Home() {
     useGSAP(
       () => {
         if (e.current) {
-          // const splitText = new SplitText(e.current, {
-          //   type: "chars, lines",
-          //   // linesClass: `${styles.splitLine}`,
-          //   // lineThreshold: 5,
-          // });
-
-          // const elements = splitText.chars;
+        
 
           gsap.from(e.current, {
             yPercent: 100,
@@ -77,98 +69,7 @@ export default function Home() {
   });
   
 })
-  //   useGSAP(() => {
-  //     if(textRef.current){
-  //         gsap.registerPlugin(ScrollTrigger, SplitText);
 
-  //         const splitText = new SplitText(textRef.current, {
-  //             type: 'chars, lines',
-  //             // linesClass: `${styles.splitLine}`,
-  //             lineThreshold: 5,
-  //         });
-
-  //         const elements = splitText.chars;
-
-  //         gsap.from(elements, {
-  //           yPercent:100,
-  //             scrollTrigger: {
-  //                 trigger: textRef.current,
-  //                 toggleActions: "restart pause resume reverse",
-  //                 start: "top 85%",
-  //             },
-  //             duration: 0.5,
-  //             autoAlpha: 0,
-  //             ease: "power1.out",
-  //             stagger: 0.05,
-  //         });
-  //     }
-
-  // }, { scope: textRef });
-
-  // gsap.to( h3, { rotate: 360 })
-
-  // gsap.registerPlugin(ScrollTrigger,SplitText)
-  // useGSAP(()=>{
-  //   gsap.from(h3, { // <- selector text, scoped to this component!
-  //     opacity: 0,
-  //     yPercent: "+=30",
-  //     ease: "back",
-  //     duration: 1,
-  //     // rotation: 360,
-  //     // stagger: 0.1
-  //   });
-  // })
-  // gsap.registerPlugin(ScrollTrigger, SplitText);
-  // gsap.registerPlugin(ScrollTrigger,SplitText)
-  // const parallax = useParallax({
-  //   // rotate: [0, 360],
-  //   scale: [1.1, 0.7, "easeInQuad"],
-
-  //   // translateY: [ 0,20 ],
-  //   // display: ["flex","none","easeInQuad"]
-  // });
-
-  // gsap.to(".left-img", {rotation: 360, x: 100, duration: 1});
-  // gsap.from(".left-img", { y: -100, duration: 1});
-
-  // let tween = gsap.from(".left-img", { y: 100 });
-  // ScrollTrigger.create({
-  //   trigger: ".left-img",
-  //   start: "top center",
-  //   end: "+=500",
-  //   animation: tween,
-
-  // });
-
-  // let split = SplitText.create("h1", {type:"chars"});
-
-  //     gsap.from(split.chars, { // <- selector text, scoped to this component!
-  //       opacity: 0,
-  //       y: 100,
-  //       ease: "back",
-  //       duration: 1,
-  //       stagger: 0.1
-  //     });
-  // let split = SplitText.create(h3, {type:"chars"});
-  //   gsap.from(split.chars, { // <- selector text, scoped to this component!
-  //       // opacity: 0,
-  //       // y: 100,
-  //       // ease: "back",
-  //       // duration: 1,
-  //       // stagger: 0.1
-  //       yPercent:120,
-  //       stagger:0.05,
-  //       ease:"back.out",duration:1
-  //     });
-  // gsap.from(h3.current, {y:100 ,opacity:0,stagger:0.1, duration: 1});
-  //                 toggleActions: "restart pause resume reverse",
-  // gsap.to(h3.current, {y:0,opacity:1, duration: 1,
-
-  //   toggleActions: "restart pause resume reverse",
-  // });
-
-  // gsap.from(h3.current, {y:100 ,opacity:0, duration: 1});
-  // gsap.to(h3.current, {y:0,opacity:1, duration: 1});
 
   return (
     <>
@@ -212,12 +113,9 @@ export default function Home() {
               <a href="https://twitter.com/CLonarkar24" target="_blank">
                 <FaSquareXTwitter />
               </a>
-              {/* <a href="http://" target="_blank"></a> */}
             </div>
           </div>
 
-          {/* <h1 className="b">-Backend Devloper</h1>
-          <h1 className="a">-Android Devloper</h1> */}
         </div>
       </section>
     </>

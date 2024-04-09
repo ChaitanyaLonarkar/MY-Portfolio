@@ -3,8 +3,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { SplitText } from "gsap/SplitText";
-// import { SplitText } from "gsap-trial/SplitText";
+
 
 export default function Creative() {
   const boldTitle = useRef();
@@ -14,7 +13,6 @@ export default function Creative() {
   const para2 = useRef();
 
   useGSAP(() => {
-    // gsap.registerPlugin(ScrollTrigger, SplitText);
     gsap.registerPlugin(ScrollTrigger);
 
     // const splitTextLeft = new SplitText(boldTitleLeft.current, {

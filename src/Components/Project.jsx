@@ -11,9 +11,7 @@ import Marquee from "react-fast-marquee";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { SplitText } from "gsap/SplitText";
-// import { SplitText } from "gsap-trial/SplitText";
-// import { Timeline } from "gsap/gsap-core";
+
 
 export default function Project() {
   const galleryContainer = useRef();

@@ -6,8 +6,6 @@ import Marquee from "react-fast-marquee";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { SplitText } from "gsap/SplitText";
-import { SplitText } from "gsap-trial/SplitText";
 export default function Skills2() {
 
   const sk = useRef()
@@ -16,14 +14,7 @@ export default function Skills2() {
     useGSAP(
       () => {
         if (e.current) {
-          // const splitText = new SplitText(e.current, {
-          //   type: "chars, lines",
-          //   // linesClass: `${styles.splitLine}`,
-          //   // lineThreshold: 5,
-          // });
-
-          // // const elements = splitText.chars;
-
+       
           gsap.from(e.current, {
             yPercent: 100,
             scrollTrigger: {

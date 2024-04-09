@@ -6,7 +6,6 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
 
 
 export default function Footer() {
@@ -37,7 +36,7 @@ export default function Footer() {
           scrollTrigger: {
             trigger: e.current,
             toggleActions: "restart pause resume reverse",
-            start: "top 93%",
+            start: "top 95%",
           },
           duration: 0.7,
           autoAlpha: 0,

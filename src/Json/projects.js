@@ -51,7 +51,7 @@ export const AllProjects = [
     tech: "HTML, CSS, JS",
     description:
       "This Application contains the code for building a Netflix-inspired home page using HTML and CSS. The project aims to recreate the visual design and layout of the Netflix home page, providing a starting point for creating similar interfaces or learning web development techniques..",
-    live: "https://papaer-portfolio.netlify.app/",
+    live: "https://netflix-clonee.netlify.app/",
     code: "https://github.com/ChaitanyaLonarkar/netflix-clone",
       },
   {

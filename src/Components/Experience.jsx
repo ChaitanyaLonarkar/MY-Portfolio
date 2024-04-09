@@ -3,7 +3,6 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { SplitText } from "gsap-trial/SplitText";
 
 export default function Experience() {
   const first = useRef();
@@ -16,14 +15,6 @@ export default function Experience() {
   useGSAP(() => {
     const reveal = (e) => {
       if (e.current) {
-        // const splitText = new SplitText(e.current, {
-        //   type: "chars, lines",
-        //   // linesClass: `${styles.splitLine}`,
-        //   // lineThreshold: 5,
-        // });
-
-        // const elements = splitText.chars;
-
         gsap.from(e.current, {
           yPercent: 101,
           scrollTrigger: {
@@ -46,14 +37,7 @@ export default function Experience() {
     const reveal2 = (e) => {
     
       if (e.current) {
-        // const splitText = new SplitText(e.current, {
-        //   type: "chars, lines",
-        //   // linesClass: `${styles.splitLine}`,
-        //   // lineThreshold: 5,
-        // });
-
-        // const elements = splitText.chars;
-
+        
         gsap.from(e.current, {
           yPercent: 100,
           scrollTrigger: {
