@@ -89,7 +89,7 @@ export default function About() {
             </p>
             <a
               ref={btn}
-              href="http://"
+              href="https://drive.google.com/file/d/1IgIPLy894QLlL-v0R9M84Icmf2Z6xyma/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
