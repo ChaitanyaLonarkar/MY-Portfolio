@@ -7,9 +7,21 @@ import folio from "../assets/img/folio.png"
 import Edu2 from "../assets/img/Edu2.jpg"
 import game from "../assets/img/game.jpg"
 import converter from "../assets/img/converter.png"
+import blog from "../assets/img/blog.jpeg"
+
 
  
 export const AllProjects = [
+  {
+    image: blog,
+    
+    title: "Perfect Blogs",
+    tech: "ReactJS, TailwindCSS, NodeJs, ExpressJs, MongoDB",
+    description: `Developed a full-stack blog platform using the MERN stack (MongoDB, Express.js, React, Node.js). 🔧 Implemented secure user authentication, profile management, and account deletion features.🔒 Enabling users to create, update, and delete blogs,✍️ as well as search by title or category feature. 🔍 Designed an interactive commenting system that allows users to add, delete comments.🌟`,
+    live: "https://perfect-blogs.netlify.app/",
+    code: "https://github.com/ChaitanyaLonarkar/Authentication",
+
+      },
   {
     image: movieimg,
     

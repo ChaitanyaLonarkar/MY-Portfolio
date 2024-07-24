@@ -213,11 +213,11 @@ export default function Project() {
                       <div className="stack">{project.tech}</div>
                     </div>
                     <div className="live">
-                      <a href={project.live}>
+                      <a href={project.live} target="_blank">
                         <SiQuicklook className="live-icon" />
                         Preview
                       </a>
-                      <a href={project.code}>
+                      <a href={project.code} target="_blank">
                         <FaCode className="live-icon" />
                         Code
                       </a>
