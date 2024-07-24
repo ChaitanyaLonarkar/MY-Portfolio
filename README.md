@@ -1,4 +1,4 @@
-https://chaitanyalonarkar.netlify.app/#about
+https://chaitanyalonarkar.netlify.app
 
 
 # React + Vite
