@@ -9,6 +9,9 @@ export default function Experience() {
   const head = useRef();
   const second = useRef();
   const third = useRef();
+  const fourth = useRef();
+  const fifth = useRef();
+
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -29,15 +32,15 @@ export default function Experience() {
         });
       }
     };
-    reveal(first)
-    reveal(second)
-    reveal(third)
+    reveal(first);
+    reveal(second);
+    reveal(third);
+    reveal(fourth);
+    reveal(fifth);
 
 
     const reveal2 = (e) => {
-    
       if (e.current) {
-        
         gsap.from(e.current, {
           yPercent: 100,
           scrollTrigger: {
@@ -51,26 +54,57 @@ export default function Experience() {
           stagger: 0.009,
         });
       }
-    }
-    reveal2(head)
-});
-
-
-  
-  
+    };
+    reveal2(head);
+  });
 
   return (
     <>
       <div className="experience">
-        <div style={{overflow:"hidden"}}>
+        <div style={{ overflow: "hidden" }}>
+          <div className="e-head" ref={head}>
+            Experience <br />
+            History
+          </div>
+        </div>
+        <div className="allExp">
+        <div className="experience-detail" ref={first}>
+            <div className="el">
+              <div className="h2">
+                <h2>Web Developer Intern (MERN)</h2>
+                {/* <h2>Web Dev</h2> */}
+              </div>
 
-        <div className="e-head"ref={head}>
-          Experience <br />
-          History
-        </div>
-        </div>
-        <div className="allExp" >
-          <div className="experience-detail" ref={first}>
+              <div className="des">
+                Working as an Intern Web Develeoper in
+                  <b> Ambe AI Technology Pvt. Ltd, Nagpur(MH)</b>
+              </div>
+            </div>
+            <div className="er duration">
+              <p>Dec 2024 - Present</p>
+            </div>
+          </div>
+          <div className="line" />
+
+          <div className="experience-detail" ref={second}>
+            <div className="el">
+              <div className="h2">
+                <h2>Web Developer Intern</h2>
+                {/* <h2>Web Dev</h2> */}
+              </div>
+
+              <div className="des">
+                Working as an Intern Web Develeoper in
+                  <b> Tars Technology, Nagpur(MH)</b>
+              </div>
+            </div>
+            <div className="er duration">
+              <p>Jun 2024 - Dec 2024</p>
+            </div>
+          </div>
+          <div className="line" />
+
+          <div className="experience-detail" ref={third}>
             <div className="el">
               <div className="h2">
                 <h2>Web Developer Co-oridinator</h2>
@@ -83,11 +117,11 @@ export default function Experience() {
               </div>
             </div>
             <div className="er duration">
-              <p>September 2023 - Present</p>
+              <p>Sept 2023 - Sept 2024</p>
             </div>
           </div>
           <div className="line" />
-          <div className="experience-detail" ref={second}>
+          <div className="experience-detail" ref={fourth}>
             <div className="el">
               <div className="h2">
                 <h2>Web Designer Intern</h2>
@@ -104,7 +138,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="line" />
-          <div className="experience-detail" ref={third}>
+          <div className="experience-detail" ref={fifth}>
             <div className="el">
               <div className="h2">
                 <h2>Web Developer Intern</h2>

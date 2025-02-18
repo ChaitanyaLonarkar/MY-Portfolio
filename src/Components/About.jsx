@@ -89,7 +89,7 @@ export default function About() {
             </p>
             <a
               ref={btn}
-              href="https://drive.google.com/file/d/1IgIPLy894QLlL-v0R9M84Icmf2Z6xyma/view?usp=sharing"
+              href="https://drive.google.com/file/d/1qBffmoG9moYOWmPMXrFtWXBnlMwYcmzi/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -104,7 +104,7 @@ export default function About() {
                 <h2>Computer science engineering</h2>
                 <p>2022-2025</p>
               </div>
-              <p>I'm 3rd year Btech Student from SB Jain COE Nagpur</p>
+              <p>I'm 4th year Btech Student from SB Jain COE Nagpur</p>
             </div>
             <div className="edu">
               <div className="edu-year">

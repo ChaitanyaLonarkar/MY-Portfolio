@@ -75,7 +75,7 @@ export default function Home() {
     <>
       <section className="home">
         <div className="left-img" ref={merimg}>
-          <img src={myimg} alt="Chaitanya" />
+          <img src={myimg} loading="lazzy" alt="Chaitanya" />
         </div>
         <div className="left">
           <div className="div" style={{ overflow: "hidden" }}>
